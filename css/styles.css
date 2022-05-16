@@ -390,18 +390,17 @@ a {
     #about, #portfolio, #skills, #education, #projects, #contact {
         padding: 50px 0;
     }
-    .carousel-container .container > span {
+    .carousel-container .container > span, .title, .title2 {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 20px;
     }
     
     .carousel-container .container p span {
         font-weight: bold;
-        font-size: 10px;
+        font-size: 15px;
     }
-    #about-bio, #how-it-works-bio, #vision-bio {
-        text-align: justify;
-        font-size: 1em;
+    #about-bio, #how-it-works-bio, #vision-bio, .my-btn, .my-btn2, .my-btn3 {
+        font-size: 15px;
     }
     #about-container, #vision-container, #how-it-works-container {
         padding: 30px;
@@ -429,6 +428,9 @@ a {
 
     .head, #slide-1, #slide-2, #slide-3 {
         height: 500px;
+    }
+    #form {
+        margin-bottom: 50px;
     }
 }
 
