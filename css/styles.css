@@ -81,6 +81,8 @@ a {
 
 /* navbar end */
 
+/* custom buttons */
+
 .my-btn {
     color: #125487;
     border-radius: 50px;
@@ -123,6 +125,13 @@ a {
     transition: 500ms;
 }
 
+/* custom buttons end */
+
+
+/* #how-it-works p {
+    text-align: left;
+} */
+
 #about-container, #how-it-works-container {
     background-color: #125487;
     color: #fff;
@@ -150,6 +159,12 @@ a {
     padding: 50px 100px;
 }
 
+#book-survey {
+    margin-top: 30px;
+}
+
+/* titles */
+
 .title {
     padding-bottom:10px;
     border-bottom: 1px solid #125487;
@@ -163,6 +178,10 @@ a {
     color: #fff;
     margin-bottom: 50px;
 }
+
+/* titles end */
+
+/* main-content */
 
 .main-content, .main-content2 {
     height: 80vh;
@@ -209,6 +228,10 @@ a {
     background-image: linear-gradient(to right,rgba(0,0,1,0.1),rgba(0,0,0,0.9)), url('../images/main-4.jpg');
 }
 
+/* main-content end */
+
+/* projects */
+
 .img-proj {
     border-radius: 30px;
     height: 200px;
@@ -242,6 +265,29 @@ a {
 #proj4 {
     background-image: url("../images/main-4.jpg");
 }
+
+/* projects end  */
+
+/* counter  */
+
+.counter-container {
+    font-size: 2em;
+    border-radius: 50%;
+    color: #125487;
+    padding: 20px;
+}
+#counter-div {
+    padding: 50px;
+    background-color: #ebebeb;
+}
+#counter-div span {
+    color: #125487;
+    font-weight: bolder;
+}
+
+/* counter end  */
+
+/* contact */
 
 #contact {
     background-color: #125487;
@@ -354,24 +400,9 @@ a {
     color: #fff;
 }
 
-.counter-container {
-    font-size: 2em;
-    border-radius: 50%;
-    color: #125487;
-    padding: 20px;
-}
-#counter-div {
-    padding: 50px;
-    background-color: #ebebeb;
-}
-#counter-div span {
-    color: #125487;
-    font-weight: bolder;
-}
+/* footer end  */
 
-#book-survey {
-    margin-top: 30px;
-}
+
 
 @media only screen and (max-width: 767px) {
     #logo {
@@ -398,6 +429,7 @@ a {
     }
     #about-bio, #how-it-works-bio, #vision-bio, .my-btn, .my-btn2, .my-btn3 {
         font-size: 15px;
+        font-weight: normal;
     }
     #about-container, #vision-container, #how-it-works-container {
         padding: 30px;
@@ -432,6 +464,19 @@ a {
     #copyright {
         font-size: 10px;
         line-height: 10px;
+    }
+    #about, #vision, #how-it-works, #projects, #contact {
+        padding: 50px 0;
+    }
+    #book-survey {
+        margin: 0;
+        
+    }
+    #how-it-works span {
+        font-size: 0.6em;
+    }
+    #book-survey span {
+        font-size: 12px;
     }
 }
 
