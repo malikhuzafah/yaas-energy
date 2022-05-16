@@ -353,7 +353,7 @@ a {
 
 #copyright {
     background-color: #125487;
-    height: 50px;
+    /* height: 50px; */
     color: #fff;
 }
 
@@ -384,7 +384,7 @@ a {
     }
 
     #navbar {
-        padding: 0;
+        padding: 0 5%;
     }
 
     #about, #portfolio, #skills, #education, #projects, #contact {
@@ -432,6 +432,10 @@ a {
     #form {
         margin-bottom: 50px;
     }
+    #copyright {
+        font-size: 10px;
+        line-height: 10px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -454,7 +458,12 @@ a {
         text-align: center;
     }
     .nav-link span, #navbarDropdown {
-        color: #ffdb58;
+        color: #fff;
+    }
+    #cv .my-btn {
+        border-color: #fff;
+        color: #fff;
+
     }
 }
 
