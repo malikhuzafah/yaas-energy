@@ -123,8 +123,6 @@ a {
     transition: 500ms;
 }
 
-
-
 #about-container, #how-it-works-container {
     background-color: #125487;
     color: #fff;
@@ -353,7 +351,6 @@ a {
 
 #copyright {
     background-color: #125487;
-    /* height: 50px; */
     color: #fff;
 }
 
