@@ -191,6 +191,7 @@ a {
     margin: auto;
     position: relative;
     color: white;
+    background-attachment: fixed;
 }
 
 .main-content div{
@@ -403,6 +404,67 @@ a {
 /* footer end  */
 
 
+/* about-page */
+
+/* .about-head {
+    height: 500px;
+} */
+
+#about-head-img {
+    background-image: url("../images/main-1.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 500px;
+    text-align: center;
+}
+.col-3 {
+    padding: 0;
+    margin: 0;
+}
+#team-div {
+    position: relative;
+    /* margin: auto; */
+    overflow: hidden;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+#team-div img {
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+}
+#team-div:hover .overlay {
+    opacity: 1;
+}
+#team-div:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* about page end  */
+
+
 
 @media only screen and (max-width: 767px) {
     #logo {
@@ -479,6 +541,7 @@ a {
         font-size: 12px;
     }
 }
+
 
 @media only screen and (max-width: 991px) {
     .navbar {

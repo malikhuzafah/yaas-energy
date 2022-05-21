@@ -52,6 +52,9 @@ $(function() {
     $(".navbar-brand").click(function() {
         $(window).scrollTop(0);
     });
+    $(".nav-link").click(function() {
+        $(window).scrollTop(0);
+    })
 })
 
 function scrollFunction() {
