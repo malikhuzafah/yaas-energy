@@ -63,13 +63,13 @@ function scrollFunction() {
         $("#navbar").css("background", "#1C2331");
         $(".nav-link span, #navbarDropdown").css("color", "#fff");
         // $(".nav-link span, #navbarDropdown").css("color", "#ffdb58");
-        $("#cv button").removeClass("my-btn");
-        $("#cv button").addClass("my-btn2");
+        $("#navbar-btn button").removeClass("my-btn");
+        $("#navbar-btn button").addClass("my-btn2");
     } else {
         $('#navbar').css('background-color','transparent');
         $(".nav-link span, #navbarDropdown").css("color", "#125468");
-        $("#cv button").addClass("my-btn");
-        $("#cv button").removeClass("my-btn2");
+        $("#navbar-btn button").addClass("my-btn");
+        $("#navbar-btn button").removeClass("my-btn2");
         $("#navbar").css("padding", "2% 5%");
     }
 }

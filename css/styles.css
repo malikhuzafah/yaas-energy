@@ -253,6 +253,10 @@ a {
 
 /* testimonials end  */
 
+#ht-1, #ht-2, #ht-3, #ht-4 {
+    padding: 20px;
+}
+
 
 /* projects */
 
@@ -489,6 +493,87 @@ a {
     /* transition: 1s; */
 }
 
+.container1,
+.container1 .img-area,
+.social-icons a{
+  background: #ecf0f3;
+  box-shadow: -3px -3px 7px #ffffff,
+               3px 3px 5px #ceced1;
+}
+
+.container1{
+    position: relative;
+    /* width: 350px; */
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container1 .img-area{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-area .inner-area{
+    height: calc(100% - 25px);
+    width: calc(100% - 25px);
+    border-radius: 50%;
+  }
+  .inner-area img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .container1 .name{
+    font-size: 23px;
+    font-weight: 500;
+    color: #31344b;
+    margin: 10px 0 5px 0;
+  }
+  .container1 .about{
+    color: #44476a;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .container1 .social-icons{
+    margin: 15px 0 25px 0;
+  }
+  .social-icons a{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+.social-icons a i{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+  }
+  .social-icons a.fb i{
+    color: #4267B2;
+  }
+  .social-icons a.twitter i{
+    color: #1DA1F2;
+  }
+  .social-icons a.insta i{
+    color: #E1306C;
+  }
+  .social-icons a.yt i{
+    color: #ff0000;
+  }
+
 /* about page end  */
 
 
@@ -595,14 +680,14 @@ a {
         width: 100%;
         text-align: center;
     }
-    #cv {
+    #navbar-btn {
         width: 100%;
         text-align: center;
     }
     .nav-link span, #navbarDropdown {
         color: #fff;
     }
-    #cv .my-btn {
+    #navbar-btn .my-btn {
         border-color: #fff;
         color: #fff;
 
