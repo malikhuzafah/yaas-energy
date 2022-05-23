@@ -27,12 +27,15 @@
     <title>YAAS Energy</title>
 </head>
 
+
+
+
 <body>
-    <div class="about-head">
+    <div class="head">
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="./index.html">
                         <div id="logo"></div>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,19 +46,19 @@
                     <div class="collapse navbar-collapse align-middle" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" id="about-link" href="#"><span>About</span></a>
+                                <a class="nav-link" id="about-link" href="./about.html"><span>About</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="portfolio-link" href="#"><span>FAQ's</span></a>
+                                <a class="nav-link active" id="portfolio-link" href="#"><span>FAQ's</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="education-link" href="#"><span>Career</span></a>
+                                <a class="nav-link" id="education-link" href="./career.html"><span>Career</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="skills-link" href="#"><span>Partners</span></a>
+                                <a class="nav-link" id="skills-link" href="./partners.html"><span>Partners</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="proj-link" href="#"><span>Contact</span></a>
+                                <a class="nav-link" id="proj-link" href="./contact.html"><span>Contact</span></a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -73,168 +76,133 @@
                                 </ul>
                             </li>
                         </ul>
-                        <div id="cv">
+                        <div id="navbar-btn">
                             <a href="#">
-                                <button class="my-btn btn"><span>Resume</span></button>
+                                <button class="my-btn btn"><span>Get a quote</span></button>
                             </a>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
-        <div class="w-100">
-            <div class="img-fluid" id="about-head-img">
-                <div class="container">
-                    <span class="h1">About</span>
-                </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-        </div>
-    </div>
-    <div id="about">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <p class="title h1 text-center"><strong>About Us.</strong></p>
-                </div>
-                <dic class="col-12">
-                    <div class="container" id="about-container">
-                        <p id="about-bio">
-                            YAAS Group of Engineers is a specialist solar company based in Pakistan. With an extensive
-                            experience, we're installing and maintaining solar systems in Residential, commercial,
-                            Industrial as well as in Agricultural fields. We pride ourselves on offering quality
-                            services and pay keen attention to details. By choosing YAAS as your energy supplier, you
-                            can enjoy price security when you lock in long term saving.
-                        </p>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="home">
+                    <div id="slide-1"></div>
+                    <div class="carousel-container carousel-caption" align="center">
                         <div class="container">
-                            <a href="#" class="btn my-btn2"><span>Learn More</span></a>
+                            <span class="h1">Go solar, Protect the environment</span>
+                            <p>
+                                <span>We are doing energy better for you and for the environment. Just the way to go for
+                                    all who care for the planet!</span>
+                            </p>
+                            <a href="#">
+                                <button class="btn my-btn2">
+                                    <span>Get Quote</span>
+                                </button>
+                            </a>
                         </div>
                     </div>
-                </dic>
-            </div>
-        </div>
-    </div>
-    <div id="vision">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <p class="title2 h1 text-center"><strong>Our Vision.</strong></p>
                 </div>
-                <dic class="col-12">
-                    <div class="container" id="vision-container">
-                        <p id="vision-bio">
-                            We are hitting the market ground with a mission to make that future a reality, today. And we
-                            are focused on taking the necessary steps to get there. We believe in a future where clean
-                            energy is accessible to everyone, everywhere. Get affordable pricing and contribute to a
-                            cleaner environment with us!
-                        </p>
-                    </div>
-                </dic>
-            </div>
-        </div>
-    </div>
-    <!-- <div id="how-it-works">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <p class="title h1 text-center"><strong>How It Wokrs?</strong></p>
-                </div>
-                <div class="col-3">
-                    <div id="ht-1">
-                        <img class="img-fluid" src="images/icon-1.png" width="170px" height="170px">
-                        <p><strong>1. <br class="d-block d-sm-none"></strong><span>Speak to a solar
-                            consultant.</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div id="ht-2">
-                        <img class="img-fluid" src="images/icon-2.png" width="170px" height="170px">
-                        <p><strong>2. <br class="d-block d-sm-none"></strong><span>We'll design your
-                            solar panel
-                            system.</span></p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div id="ht-3">
-                        <img class="img-fluid" src="images/icon-3.png" width="170px" height="170px">
-                        <p><strong>3. <br class="d-block d-sm-none"></strong><span>Schedule your
-                            install.</span></p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div id="ht-4">
-                        <img class="img-fluid" src="images/icon-4.png" width="170px" height="170px">
-                        <p><strong>4. <br class="d-block d-sm-none"></strong><span>Start saving on your
-                            electricity bill.</span></p>
-                    </div>
-                </div>
-                <div class="container" id="book-survey">
-                    <a href="#" class="btn my-btn"><span>Book your survey</span></a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <div id="about">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <p class="title h1 text-center"><strong>Why Us?</strong></p>
-                </div>
-                <dic class="col-12">
-                    <div class="container" id="about-container">
-                        <p id="about-bio">
-                            We are dedicated to providing adequately sized, professionally designed and installed solar
-                            power systems. All our personnel, design and installation teams comprise of enthusiastic
-                            people who share a common goal, of using solar energy for a brighter future. All our
-                            photovoltaic electric systems are designed and installed by highly qualified engineers,
-                            Installers and personnel.
-                        </p>
-                        <div class="container">
-                            <a href="#" class="my-btn2 btn"><span>Learn More</span></a>
-                        </div>
-                    </div>
-                </dic>
-            </div>
-        </div>
-    </div>
 
-    <div class="w-100">
+                <div class="carousel-item">
+                    <div id="slide-2"></div>
+                    <div class="carousel-container carousel-caption" align="center">
+                        <div class="container">
+                            <span class="h1">YAAS Energy</span>
+                            <p>
+                                <span>YAAS Group of Engineers providing the premier opportunity to let the sun spawn
+                                    electricity for you with finest solutions at budget friendly prices</span>
+                            </p>
+                            <a href="#">
+                                <button class="btn my-btn2">
+                                    <span>About Us</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div id="slide-3"></div>
+                    <div class="carousel-container carousel-caption" align="center">
+                        <div class="container">
+                            <span class="h1">Go solar, Protect the environment</span>
+                            <p>
+                                <span>We are doing energy better for you and for the environment. Just the way to go for
+                                    all who care for the planet!</span>
+                            </p>
+                            <a href="#">
+                                <button class="btn my-btn2">
+                                    <span>Contact Us</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="w-100" id="faqs">
         <div class="container">
-            <div class="row" align="center">
-                <div class="col-3">
-                    <!-- <div class="container"> -->
-                        <div class="" id="team-div">
-                            <img src="./images/team-1.jpg" alt="" class="img-fluid" id="team">
-                            <div class="overlay">
-                                <div class="container">
-                                    <span class="h1">
-                                        Malik Huzafah Khan
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    <!-- </div> -->
+            <div class="container faq">
+                <button class="collapsible">How Long will my solar pannels last?</button>
+                <div class="content container">
+                    <span class="text-muted">the majority of solar companies claim that their solar panels will produce
+                        at a profitable efficiency for at least 25 years. This means that over time your solar panels
+                        will suffer a slight degradation, which is about 0.8-1.2 percent per year of original
+                        efficiency.</span>
                 </div>
-                <div class="col-3">
-                    <!-- <div class="container"> -->
-                        <div class="" id="team-div">
-                            <img src="./images/team-yousaf.jpg" alt="" class="img-fluid" id="team">
-                        </div>
-                    <!-- </div> -->
+            </div>
+            <div class="container faq">
+                <button class="collapsible">Open Collapsible</button>
+                <div class="content container">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex
+                        ea commodo consequat.</span>
                 </div>
-                <div class="col-3">
-                    <!-- <div class="container"> -->
-                        <div class="" id="team-div">
-                            <img src="./images/team-abdullah.jpg" alt="" class="img-fluid" id="team">
-                        </div>
-                    <!-- </div> -->
+            </div>
+            <div class="container faq">
+                <button class="collapsible">Open Collapsible</button>
+                <div class="content container">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex
+                        ea commodo consequat.</span>
                 </div>
-                <div class="col-3">
-                    <!-- <div class="container"> -->
-                        <div class="" id="team-div">
-                            <img src="./images/team-ahmad.jpg" alt="" class="img-fluid" id="team">
-                        </div>
-                    <!-- </div> -->
+            </div>
+            <div class="container faq">
+                <button class="collapsible">Open Collapsible</button>
+                <div class="content container">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex
+                        ea commodo consequat.</span>
                 </div>
             </div>
         </div>
@@ -260,7 +228,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-6">
-                    <div class="container" id="form">
+                    <form class="container" id="form">
                         <div>
                             <p class="h2">Say hello.</p>
                         </div>
@@ -281,10 +249,10 @@
                                 <span class="h5" id="submitted"></span>
                             </div>
                             <div class="col-6 text-end">
-                                <button id="send" class="my-btn2 btn"><strong>Send</strong></button>
+                                <button id="send" class="my-btn2 btn" type="submit">Send</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="col-12">
                     <div class="container">
@@ -302,12 +270,9 @@
         <div class="row" id="footer">
             <div class="container">
                 <div class="social-icons spinned">
-                    <a class="item facebook" href="#" target="_blank"><em
-                            class="fa fa-facebook"></em></a>
-                    <a class="item linkedin" href="#"
-                        target="_blank"><em class="fa fa-linkedin"></em></a>
-                    <a class="item instagram" href="#" target="_blank"><em
-                            class="fa fa-instagram"></em></a>
+                    <a class="item facebook" href="#" target="_blank"><em class="fa fa-facebook"></em></a>
+                    <a class="item linkedin" href="#" target="_blank"><em class="fa fa-linkedin"></em></a>
+                    <a class="item instagram" href="#" target="_blank"><em class="fa fa-instagram"></em></a>
                     <a class="item phone" href="tel:+923066882888" target="_blank"><em
                             class="fa-solid fa-phone"></em></a>
                 </div>
@@ -317,6 +282,44 @@
             <span>&copy; <em id="date"></em>YAAS Energy. All rights reserved</span>
         </div>
     </footer>
+
+
+    <script>
+        // var coll = document.getElementsByClassName("collapsible");
+        // var i;
+
+        // for (i = 0; i < coll.length; i++) {
+        //     coll[i].addEventListener("click", function () {
+        //         this.classList.toggle("active1");
+        //         var content = this.nextElementSibling;
+        //         if (content.style.maxHeight) {
+        //             content.style.maxHeight = null;
+        //             this.style.borderRadius = "20px";
+        //             this.style.transition = "0.3s ease-in";
+        //         } else {
+        //             content.style.maxHeight = content.scrollHeight + "px";
+        //             this.style.borderRadius = "20px 20px 0 0";
+        //             this.style.transition = "0.3s ease-out";
+        //         }
+        //     });
+        // }
+        $(document).ready(function () {
+            $(".collapsible").click(function () {
+                var con = $(this).next();
+                if (con.height() <= "0") {
+                    con.height('250px');
+                    $(this).css("border-radius", "20px 20px 0 0");
+                    $(this).css("transition", "0.3s ease-out");
+                }
+                else {
+                    con.height("0");
+                    $(this).css("border-radius", "20px");
+                    $(this).css("transition", "0.3s ease-in");
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>

@@ -254,7 +254,7 @@ a {
 /* testimonials end  */
 
 #ht-1, #ht-2, #ht-3, #ht-4 {
-    padding: 20px;
+    padding: 10px;
 }
 
 
@@ -577,6 +577,55 @@ a {
 /* about page end  */
 
 
+/* faqs page  */
+
+.faq {
+    padding: 20px;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 20px;
+    
+  }
+  
+  .active1, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active1:after {
+    content: "\2212";
+  }
+  
+.content {
+    padding: 0 50px;
+    /* max-height: 0; */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+    background-color: #f1f1f1;
+    border-radius: 0 0 20px 20px;
+
+  }
+
+/* faqs page end  */
+
 
 
 
@@ -586,9 +635,31 @@ a {
         height: 68px;
         width: 120px;
     }
-
     #navbar {
+        background-color: #1C2331;
         padding: 0 5%;
+    }
+    #navbarSupportedContent {
+        height: 100vh;
+        transition: 0.5s ease;
+    }
+    .nav-item {
+        margin-top: 10px;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        text-align: center;
+    }
+    #navbar-btn {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-link span, #navbarDropdown {
+        color: #fff;
+    }
+    #navbar-btn .my-btn {
+        border-color: #fff;
+        color: #fff;
+
     }
 
     #about, #portfolio, #skills, #education, #projects, #contact {
@@ -666,7 +737,7 @@ a {
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .navbar {
+    #navbar {
         background-color: #1C2331;
         padding: 0 5%;
     }

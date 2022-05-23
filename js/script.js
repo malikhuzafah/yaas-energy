@@ -54,7 +54,50 @@ $(function() {
     });
     $(".nav-link").click(function() {
         $(window).scrollTop(0);
-    })
+    });
+    // $('#send').click(function() {
+    //     var c = 0;
+    //     if ($('#name-input').val().length === 0) {
+    //         $('#name-err').html("Name is required!");
+    //     }
+    //     else {
+    //         $('#name-err').html('');
+    //         c++;
+    //     }
+    //     if ($('#email-input').val().length === 0) {
+    //         $('#email-err').html("Email is required!");
+    //     }
+    //     else {
+    //         $('#email-err').html('');
+    //         c++
+    //     }
+    //     if ($('#msg-input').val().length === 0) {
+    //         $('#msg-err').html("Please enter some Message!");
+    //     }
+    //     else {
+    //         $('#msg-err').html('');
+    //         c++
+    //     }
+    //     if (c>=3) {
+    //         var email = $("#email-input").val();
+    //         var name = $("#name-input").val();
+    //         // Email.send({
+    //         //     Host : "smtp.gmail.com",
+    //         //     Username : "mhk282000@gmail.com",
+    //         //     Password : "malik1122",
+    //         //     To : 'huzafahrajput10@gmail.com',
+    //         //     From : email,
+    //         //     Subject : "This is the subject",
+    //         //     Body : "And this is the body"
+    //         // }).then(
+    //         //   message => alert(message)
+    //         // );
+    //         // $('#submitted').html('Message Recived! Thank You :)');
+    //     }
+    //     else {
+    //         $('#submitted').html('');
+    //     }
+    // });
 })
 
 function scrollFunction() {
@@ -73,3 +116,4 @@ function scrollFunction() {
         $("#navbar").css("padding", "2% 5%");
     }
 }
+
