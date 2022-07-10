@@ -184,7 +184,7 @@ a {
 /* main-content */
 
 .main-content, .main-content2 {
-    height: 80vh;
+    height: 70vh;
     background-position: center;
     background-size: cover;
     padding: auto;
@@ -324,6 +324,7 @@ a {
 
 #name-err, #email-err, #msg-err, #submitted {
     font-weight: bolder;
+    color: red;
 }
 
 #contact-info {
@@ -584,7 +585,7 @@ a {
 }
 
 .collapsible {
-    background-color: #777;
+    background-color: #125487;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -598,7 +599,7 @@ a {
   }
   
   .active1, .collapsible:hover {
-    background-color: #555;
+    background-color: #1C2331;
   }
   
   .collapsible:after {
