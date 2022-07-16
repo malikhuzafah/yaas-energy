@@ -46,11 +46,10 @@
                                 <a class="nav-link" id="about-link" href="./about.html"><span>About</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="portfolio-link" href="#"><span>FAQ's</span></a>
+                                <a class="nav-link" id="portfolio-link" href="./faqs.html"><span>FAQ's</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" id="education-link"
-                                    href="./career.html"><span>Career</span></a>
+                                <a class="nav-link active" id="education-link" href="#"><span>Career</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="skills-link" href="./partners.html"><span>Partners</span></a>
@@ -86,57 +85,13 @@
         <div class="w-100">
             <div class="img-fluid" id="about-head-img">
                 <div class="container">
-                    <span class="h1">FAQ's</span>
+                    <span class="h1">Partners</span>
                 </div>
             </div>
         </div>
     </div>
-    <div class="w-100" id="faqs">
-        <div class="container">
-            <div class="container faq">
-                <button class="collapsible">How Long will my solar pannels last?</button>
-                <div class="content container">
-                    <span class="text-muted">the majority of solar companies claim that their solar panels will produce
-                        at a profitable efficiency for at least 25 years. This means that over time your solar panels
-                        will suffer a slight degradation, which is about 0.8-1.2 percent per year of original
-                        efficiency.</span>
-                </div>
-            </div>
-            <div class="container faq">
-                <button class="collapsible">Open Collapsible</button>
-                <div class="content container">
-                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore
-                        et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex
-                        ea commodo consequat.</span>
-                </div>
-            </div>
-            <div class="container faq">
-                <button class="collapsible">Open Collapsible</button>
-                <div class="content container">
-                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore
-                        et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex
-                        ea commodo consequat.</span>
-                </div>
-            </div>
-            <div class="container faq">
-                <button class="collapsible">Open Collapsible</button>
-                <div class="content container">
-                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore
-                        et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex
-                        ea commodo consequat.</span>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -158,7 +113,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-6">
-                    <form class="container" id="form">
+                    <div class="container" id="form">
                         <div>
                             <p class="h2">Say hello.</p>
                         </div>
@@ -179,10 +134,10 @@
                                 <span class="h5" id="submitted"></span>
                             </div>
                             <div class="col-6 text-end">
-                                <button id="send" class="my-btn2 btn" type="submit">Send</button>
+                                <button id="send" class="my-btn2 btn"><strong>Send</strong></button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <div class="col-12">
                     <div class="container">
@@ -212,44 +167,6 @@
             <span>&copy; <em id="date"></em>YAAS Energy. All rights reserved</span>
         </div>
     </footer>
-
-
-    <script>
-        // var coll = document.getElementsByClassName("collapsible");
-        // var i;
-
-        // for (i = 0; i < coll.length; i++) {
-        //     coll[i].addEventListener("click", function () {
-        //         this.classList.toggle("active1");
-        //         var content = this.nextElementSibling;
-        //         if (content.style.maxHeight) {
-        //             content.style.maxHeight = null;
-        //             this.style.borderRadius = "20px";
-        //             this.style.transition = "0.3s ease-in";
-        //         } else {
-        //             content.style.maxHeight = content.scrollHeight + "px";
-        //             this.style.borderRadius = "20px 20px 0 0";
-        //             this.style.transition = "0.3s ease-out";
-        //         }
-        //     });
-        // }
-        $(document).ready(function () {
-            $(".collapsible").click(function () {
-                var con = $(this).next();
-                if (con.height() <= "0") {
-                    con.height('250px');
-                    $(this).css("border-radius", "20px 20px 0 0");
-                    $(this).css("transition", "0.3s ease-out");
-                }
-                else {
-                    con.height("0");
-                    $(this).css("border-radius", "20px");
-                    $(this).css("transition", "0.3s ease-in");
-                }
-            });
-        });
-    </script>
-
 </body>
 
 </html>
