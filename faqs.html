@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <div class="about-head">
+    <div class="other-head" id="faqs-head">
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
                 <div class="container-fluid">
@@ -75,7 +75,7 @@
                             </li>
                         </ul>
                         <div id="navbar-btn">
-                            <a href="#">
+                            <a href="./contact.html">
                                 <button class="my-btn btn"><span>Get a quote</span></button>
                             </a>
                         </div>
@@ -84,7 +84,7 @@
             </nav>
         </header>
         <div class="w-100">
-            <div class="img-fluid" id="about-head-img">
+            <div class="img-fluid head-img" id="faqs-head-img">
                 <div class="container">
                     <span class="h1">FAQ's</span>
                 </div>
@@ -212,43 +212,6 @@
             <span>&copy; <em id="date"></em>YAAS Energy. All rights reserved</span>
         </div>
     </footer>
-
-
-    <script>
-        // var coll = document.getElementsByClassName("collapsible");
-        // var i;
-
-        // for (i = 0; i < coll.length; i++) {
-        //     coll[i].addEventListener("click", function () {
-        //         this.classList.toggle("active1");
-        //         var content = this.nextElementSibling;
-        //         if (content.style.maxHeight) {
-        //             content.style.maxHeight = null;
-        //             this.style.borderRadius = "20px";
-        //             this.style.transition = "0.3s ease-in";
-        //         } else {
-        //             content.style.maxHeight = content.scrollHeight + "px";
-        //             this.style.borderRadius = "20px 20px 0 0";
-        //             this.style.transition = "0.3s ease-out";
-        //         }
-        //     });
-        // }
-        $(document).ready(function () {
-            $(".collapsible").click(function () {
-                var con = $(this).next();
-                if (con.height() <= "0") {
-                    con.height('250px');
-                    $(this).css("border-radius", "20px 20px 0 0");
-                    $(this).css("transition", "0.3s ease-out");
-                }
-                else {
-                    con.height("0");
-                    $(this).css("border-radius", "20px");
-                    $(this).css("transition", "0.3s ease-in");
-                }
-            });
-        });
-    </script>
 
 </body>
 

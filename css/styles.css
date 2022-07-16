@@ -3,8 +3,8 @@
 }
 
 body {
-  /* font-family: 'Montserrat Alternates', sans-serif; */
-  /* font-family: 'Nunito', sans-serif; */
+  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 html {
@@ -37,7 +37,6 @@ a {
 .nav-link span,
 #navbarDropdown {
   color: #125487;
-  /* font-size: 1.2em; */
   margin: 0 5px;
   font-weight: bold;
 }
@@ -81,7 +80,6 @@ a {
 }
 
 .carousel-container {
-  /* background: linear-gradient(rgba(18, 84, 135, 0.7),rgba(18, 84, 135, 0.7)); */
   color: #fff;
   width: 100%;
   padding-bottom: 100px;
@@ -148,10 +146,6 @@ a {
 
 /* custom buttons end */
 
-/* #how-it-works p {
-    text-align: left;
-} */
-
 #about-container,
 #how-it-works-container {
   background-color: #125487;
@@ -174,17 +168,6 @@ a {
 #contact,
 #testimonials {
   padding: 100px 0;
-}
-
-#vision {
-  background-color: #125487;
-}
-
-#vision-container {
-  background-color: #fff;
-  color: #125487;
-  border-radius: 20px;
-  padding: 50px 100px;
 }
 
 #book-survey {
@@ -283,12 +266,10 @@ a {
 /* Testimonials */
 
 #testimonial {
-  /* background-color: #125487; */
   background: #ecf0f3;
   padding: 100px;
   box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
   border-radius: 10px;
-  /* font-size: 10px; */
 }
 
 #testimonial span {
@@ -297,6 +278,10 @@ a {
 
 #testimonial img {
   border-radius: 50%;
+}
+
+#testimonial-container {
+  padding: 50px;
 }
 
 /* testimonials end  */
@@ -488,14 +473,7 @@ a {
 
 /* footer end  */
 
-/* about-page */
-
-/* .about-head {
-    height: 500px;
-} */
-
-#about-head-img {
-  background-image: url("../images/main-1.jpg");
+.head-img {
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -503,6 +481,24 @@ a {
   line-height: 500px;
   text-align: center;
 }
+
+/* about-page */
+
+#about-head-img {
+  background-image: url("../images/main-1.jpg");
+}
+
+#vision {
+  background-color: #125487;
+}
+
+#vision-container {
+  background-color: #fff;
+  color: #125487;
+  border-radius: 20px;
+  padding: 50px 100px;
+}
+
 .col-3 {
   padding: 0;
   margin: 0;
@@ -550,6 +546,7 @@ a {
   box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.07);
   transition: 0.9s;
   margin-bottom: 10px;
+  border-radius: 50%;
 }
 .team-img:hover {
   opacity: 100%;
@@ -564,89 +561,21 @@ a {
   margin-bottom: 100px;
 }
 
-.container1,
-.container1 .img-area,
-.social-icons a {
-  background: #ecf0f3;
-  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+#team-container {
+  margin: 0;
 }
 
-.container1 {
-  position: relative;
-  /* width: 350px; */
-  padding: 30px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.container1 .img-area {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.img-area .inner-area {
-  height: calc(100% - 25px);
-  width: calc(100% - 25px);
-  border-radius: 50%;
-}
-.inner-area img {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.container1 .name {
-  font-size: 23px;
-  font-weight: 500;
-  color: #31344b;
-  margin: 10px 0 5px 0;
-}
-.container1 .about {
-  color: #44476a;
-  font-weight: 400;
-  font-size: 16px;
-}
-.container1 .social-icons {
-  margin: 15px 0 25px 0;
-}
-.social-icons a {
-  position: relative;
-  height: 40px;
-  width: 40px;
-  margin: 0 5px;
-  display: inline-flex;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.social-icons a i {
-  position: relative;
-  z-index: 3;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  line-height: 40px;
-}
-.social-icons a.fb i {
-  color: #4267b2;
-}
-.social-icons a.twitter i {
-  color: #1da1f2;
-}
-.social-icons a.insta i {
-  color: #e1306c;
-}
-.social-icons a.yt i {
-  color: #ff0000;
+.team-info {
+  color: #313131;
 }
 
 /* about page end  */
 
 /* faqs page  */
+
+#faqs-head-img {
+  background-image: url("../images/main-1.jpg");
+}
 
 .faq {
   padding: 20px;
@@ -684,7 +613,6 @@ a {
 
 .content {
   padding: 0 50px;
-  /* max-height: 0; */
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease-out;
@@ -693,6 +621,30 @@ a {
 }
 
 /* faqs page end  */
+
+/* Career Page */
+
+#career-head-img {
+  background-image: url("../images/main-1.jpg");
+}
+
+/* Career Page end */
+
+/* partners page */
+
+#partners-head-img {
+  background-image: url("../images/main-1.jpg");
+}
+
+/* Partners Page end */
+
+/* contact page */
+
+#contact-head-img {
+  background-image: url("../images/main-1.jpg");
+}
+
+/* contact page end */
 
 @media only screen and (max-width: 767px) {
   #logo {
@@ -851,7 +803,6 @@ a {
   #testimonial {
     padding: 50px 0;
     text-align: center;
-    /* font-size: 1em; */
   }
 }
 
