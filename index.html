@@ -56,32 +56,33 @@
                         <span class="closebtn" id="navbar-close-btn"><i class="fa-solid fa-xmark"></i></span>
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link nav-close" id="about-link" href="./about.html"><span>About</span></a>
+                                <a class="nav-link nav-close nav-link-scroll" id="about-link"
+                                    href="./about.html"><span>About</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-close" id="portfolio-link"
+                                <a class="nav-link nav-close nav-link-scroll" id="portfolio-link"
                                     href="./faqs.html"><span>FAQ's</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-close" id="education-link"
+                                <a class="nav-link nav-close nav-link-scroll" id="education-link"
                                     href="./career.html"><span>Career</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-close" id="skills-link"
+                                <a class="nav-link nav-close nav-link-scroll" id="skills-link"
                                     href="./partners.html"><span>Partners</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-close" id="contact-link"
+                                <a class="nav-link nav-close nav-link-scroll" id="contact-link"
                                     href="./contact.html"><span>Contact</span></a>
                             </li>
                             <li class="nav-item" id="smallProj">
-                                <a href="#" class="nav-link" id="proj-link">
+                                <a href="#" class="nav-link nav-link-scroll" id="proj-link">
                                     <span>Projects <i class="fa fa-solid fa-arrow-right"></i></span>
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
                                 <div id="dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Projects
                                     </a>
@@ -108,12 +109,18 @@
         </header>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                <button style="display: none;" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button style="display: none;" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button style="display: none;" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <a href="#about">
+                    <div class="arrow-down">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div>
+                </a>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" id="home">
@@ -172,13 +179,20 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <div
+                    style="background-color: #000; border-radius: 50%; padding: 10px; justify-content: center; align-items: center; display: flex;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </div>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <div
+                    style="background-color: #000; border-radius: 50%; padding: 10px; justify-content: center; align-items: center; display: flex;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </div>
+
             </button>
         </div>
     </div>
