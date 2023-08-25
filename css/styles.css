@@ -689,6 +689,15 @@ a {
 
 /* contact page end */
 
+#navbar-toggle {
+  border: none;
+}
+
+#navbar-toggle i {
+  font-size: 30px;
+  color: #1c2331;
+}
+
 @media only screen and (max-width: 767px) {
   #navbarSupportedContent2 {
     display: block;
@@ -752,7 +761,7 @@ a {
     width: 120px;
   }
   #navbar {
-    background-color: #1c2331;
+    /* background-color: #1c2331; */
     padding: 0 5%;
   }
   /* #navbarSupportedContent {
@@ -888,7 +897,7 @@ a {
     display: none;
   }
   #navbar {
-    background-color: #1c2331;
+    /* background-color: #1c2331; */
     padding: 0 5%;
   }
   #navbarSupportedContent .closebtn {
