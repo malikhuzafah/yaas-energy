@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#125487">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#125487">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Nunito&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="https://kit.fontawesome.com/d32649dfde.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+    <title>YAAS Energy</title>
+</head>
+
+<body id="faq-body">
+
+    <div>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <div id="logo"></div>
+                    </a>
+                    <button class="navbar-toggler" type="button" id="navbar-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div id="navbarSupportedContent2">
+                        <span class="backBtn" id="navbar-back-btn"><i class="fa-solid fa-arrow-left"></i></span>
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link nav-close" id="about-link"
+                                    href="#"><span>Residential</span></a></li>
+                            <li class="nav-item"><a class="nav-link nav-close" id="portfolio-link"
+                                    href="#"><span>Commercial</span></a></li>
+                            <li class="nav-item"><a class="nav-link nav-close" id="education-link"
+                                    href="#"><span>Industrial</span></a></li>
+                            <li class="nav-item"><a class="nav-link nav-close" id="skills-link"
+                                    href="#"><span>Agricultural</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse align-middle menu show" id="navbarSupportedContent">
+                        <span class="closebtn" id="navbar-close-btn"><i class="fa-solid fa-xmark"></i></span>
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link nav-close nav-link-scroll" id="about-link"
+                                    href="./about.html"><span>About</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-close nav-link-scroll" id="portfolio-link"
+                                    href="./faqs.html"><span>FAQ's</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-close nav-link-scroll" id="education-link"
+                                    href="./career.html"><span>Career</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-close nav-link-scroll" id="skills-link"
+                                    href="./partners.html"><span>Partners</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-close nav-link-scroll" id="contact-link"
+                                    href="./contact.html"><span>Contact</span></a>
+                            </li>
+                            <li class="nav-item" id="smallProj">
+                                <a href="#" class="nav-link nav-link-scroll" id="proj-link">
+                                    <span>Projects <i class="fa fa-solid fa-arrow-right"></i></span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <div id="dropdown">
+                                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Projects
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item nav-close" href="#">Residential</a></li>
+                                        <hr class="dropdown-divider">
+                                        <li><a class="dropdown-item nav-close" href="#">Commercial</a></li>
+                                        <hr class="dropdown-divider nav-close">
+                                        <li><a class="dropdown-item" href="#">Industrial</a></li>
+                                        <hr class="dropdown-divider nav-close">
+                                        <li><a class="dropdown-item" href="#">Agricultural</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="navbar-btn">
+                            <a href="./contact.html">
+                                <button class="my-btn btn"><span>Get a quote</span></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container" id="faqs-content">
+        <div class="container" id="faqs-head">
+            <h3>FAQS</h3>
+            <h1>Frequently Asked Questions!</h1>
+            <h3>Have questions? We're here to help!</h3>
+        </div>
+        <div class="container" id="faqs">
+            <div class="container faq">
+                <button class="collapsible" type="button" data-bs-toggle="collapse" data-bs-target="#col0"
+                    aria-expanded="false" aria-controls="col0">
+                    <div class="open-collapsible">
+                        <div>
+                            <span><strong>Why we need to switch to solar?</strong></span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle-plus plus"></i>
+                            <i class="fa-solid fa-circle-minus minus"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="col0">
+                        <div class="card card-body">
+                            <span>
+                                There are many reasons why homeowners go solar, but improving the environment and
+                                cutting energy costs are the most common. Many people are aware that solar upgrade the
+                                home efficiency and are eager to reduce their energy costs by installing solar.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container faq">
+                <button class="collapsible" type="button" data-bs-toggle="collapse" data-bs-target="#col1"
+                    aria-expanded="false" aria-controls="col1">
+                    <div class="open-collapsible">
+                        <div>
+                            <span><strong>Does winter season affects solar?</strong></span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle-plus plus"></i>
+                            <i class="fa-solid fa-circle-minus minus"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="col1">
+                        <div class="card card-body">
+                            <span>
+                                In actuality, colder temperatures can help improve the performance of solar cells
+                                production (PV Performance). Solar panels only need sunlight to produce electricity,
+                                therefore, unless your solar system is blocked by shade from trees or snow, it will
+                                continue to absorb energy during a sunny day, even in the winter.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container faq">
+                <button class="collapsible" type="button" data-bs-toggle="collapse" data-bs-target="#col2"
+                    aria-expanded="false" aria-controls="col2">
+                    <div class="open-collapsible">
+                        <div>
+                            <span><strong>What if we want to utilise our rooftop?</strong></span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle-plus plus"></i>
+                            <i class="fa-solid fa-circle-minus minus"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="col2">
+                        <div class="card card-body">
+                            <span>
+                                If anyone want to install solar and use space too. Then, Solar System installation
+                                should be done in form of shed for that customized structure should be made.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container faq">
+                <button class="collapsible" type="button" data-bs-toggle="collapse" data-bs-target="#col3"
+                    aria-expanded="false" aria-controls="col3">
+                    <div class="open-collapsible">
+                        <div>
+                            <span><strong>What will be its payback time? </strong></span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle-plus plus"></i>
+                            <i class="fa-solid fa-circle-minus minus"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="col3">
+                        <div class="card card-body">
+                            <span>
+                                For Grid-Tied Solar systems, 2-3 years is payback period and 4-5 years for Hybrid solar
+                                systems.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container faq">
+                <button class="collapsible" type="button" data-bs-toggle="collapse" data-bs-target="#col4"
+                    aria-expanded="false" aria-controls="col4">
+                    <div class="open-collapsible">
+                        <div>
+                            <span><strong>What are solar financing options?</strong></span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle-plus plus"></i>
+                            <i class="fa-solid fa-circle-minus minus"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="col4">
+                        <div class="card card-body">
+                            <span>
+                                Many banks are providing financing plans for residential, commercial, industrial and
+                                agricultural projects. We deal with JS Bank, Alfalah Bank and Bank Al Habib.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container faq">
+                <button class="collapsible" type="button" data-bs-toggle="collapse" data-bs-target="#col5"
+                    aria-expanded="false" aria-controls="col5">
+                    <div class="open-collapsible">
+                        <div>
+                            <span><strong>How can we monitor our solar system production?</strong></span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle-plus plus"></i>
+                            <i class="fa-solid fa-circle-minus minus"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="col5">
+                        <div class="card card-body">
+                            <span>
+                                System production can be monitored on inverter screen as well as through monitoring app
+                                on your phone.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container faq">
+                <button class="collapsible" type="button" data-bs-toggle="collapse" data-bs-target="#col6"
+                    aria-expanded="false" aria-controls="col6">
+                    <div class="open-collapsible">
+                        <div>
+                            <span><strong>What is difference between on grid and off grid system?</strong></span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle-plus plus"></i>
+                            <i class="fa-solid fa-circle-minus minus"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="col6">
+                        <div class="card card-body">
+                            <span>
+                                In on grid solar system, unused electricity is fed back to the grid. No battery is
+                                attached in this system.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container faq">
+                <button class="collapsible" type="button" data-bs-toggle="collapse" data-bs-target="#col7"
+                    aria-expanded="false" aria-controls="col7">
+                    <div class="open-collapsible">
+                        <div>
+                            <span><strong>What is net metering?</strong></span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle-plus plus"></i>
+                            <i class="fa-solid fa-circle-minus minus"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="col7">
+                        <div class="card card-body">
+                            <span>
+                                Net metering is a billing arrangement that credits solar energy system owners for the
+                                electricity they add to the grid. Customers are only billed for their net energy use.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container faq">
+                <button class="collapsible" type="button" data-bs-toggle="collapse" data-bs-target="#col8"
+                    aria-expanded="false" aria-controls="col8">
+                    <div class="open-collapsible">
+                        <div>
+                            <span><strong>What will be the maintenance cost of Installed system?</strong></span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle-plus plus"></i>
+                            <i class="fa-solid fa-circle-minus minus"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="col8">
+                        <div class="card card-body">
+                            <span>
+                                Contact us to get a quote for maintenance cost of your installed system.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="title2 h1 text-center"><strong>Contact Us.</strong></p>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="container" id="contact-info">
+                        <p class="h2">Lets Get In Touch.</p>
+                        <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam veniam
+                            recusandae assumenda cupiditate, maiores nesciunt sapiente possimus fugiat amet laborum in
+                            voluptatum a animi dignissimos ut repellat porro alias tempore!</p>
+                        <p class="h4">Address:</p>
+                        <p class="h6">451, Karim Block Allama Iqbal Town, Lahore</p>
+                        <p class="h4">Email:</p>
+                        <p class="h6">info@yaasgroup.com.pk</p>
+                        <p class="h4">Phone:</p>
+                        <p class="h6">+923066882888</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <form class="container" id="form">
+                        <div>
+                            <p class="h2">Say hello.</p>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name-input" placeholder="Full Name">
+                            <p id="name-err"></p>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email-input" placeholder="Email Address">
+                            <p id="email-err"></p>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="msg-input" rows="3" placeholder="Message"></textarea>
+                            <p id="msg-err"></p>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <span class="h5" id="submitted"></span>
+                            </div>
+                            <div class="col-6 text-end">
+                                <button id="send" class="my-btn2 btn" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12">
+                    <div class="container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.595555385114!2d74.2751859150788!3d31.507798981373803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919030d1451678b%3A0x33372ed7095590e4!2sYAAS%20ENERGY%20PVT%20LTD!5e0!3m2!1sen!2s!4v1652647098392!5m2!1sen!2s"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-white">
+        <div class="row" id="footer">
+            <div class="container">
+                <div class="social-icons spinned">
+                    <a class="item facebook" href="#" target="_blank"><em class="fa fa-facebook"></em></a>
+                    <a class="item linkedin" href="#" target="_blank"><em class="fa fa-linkedin"></em></a>
+                    <a class="item instagram" href="#" target="_blank"><em class="fa fa-instagram"></em></a>
+                    <a class="item phone" href="tel:+923066882888" target="_blank"><em
+                            class="fa-solid fa-phone"></em></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-2" id="copyright">
+            <span>&copy; <em id="date"></em>YAAS Energy. All rights reserved</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

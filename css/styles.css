@@ -184,6 +184,10 @@ a {
   padding: 50px 100px;
 }
 
+#about-container {
+  /* background-color: #1c2331; */
+  border-radius: 10px;
+}
 #about-bio,
 #how-it-works-bio,
 #vision-bio {
@@ -358,14 +362,17 @@ a {
 
 .proj-container {
   margin-bottom: 30px;
-  border: 2px solid yellow;
+  border: 2px solid #1c2331;
   border-radius: 30px;
   padding: 0;
-  background-color: yellow;
+  background-color: #1c2331;
 }
 
 .proj-container:hover {
-  background-color: red;
+  opacity: 0.8;
+  /* background-color: rgba(28, 35, 49, 0.8);
+  border-color: rgba(28, 35, 49, 0.8); */
+  transition: 0.5s;
 }
 
 .proj-container span {
@@ -399,15 +406,17 @@ a {
 .counter-container {
   font-size: 2em;
   border-radius: 50%;
-  color: #125487;
+  /* color: #125487; */
+  color: #fff;
   padding: 20px;
 }
 #counter-div {
   padding: 50px;
-  background-color: #ebebeb;
+  /* background-color: #ebebeb; */
 }
 #counter-div span {
-  color: #125487;
+  /* color: #125487; */
+  color: #fff;
   font-weight: bolder;
 }
 
@@ -640,11 +649,56 @@ a {
   background-image: url("../images/main-1.jpg");
 }
 
-.faq {
-  padding: 20px;
+#faq-body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2560' height='1440' preserveAspectRatio='none' viewBox='0 0 2560 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1011%26quot%3b)' fill='none'%3e%3crect width='2560' height='1440' x='0' y='0' fill='rgba(111%2c 34%2c 50%2c 1)'%3e%3c/rect%3e%3cpath d='M2560 0L1756.03 0L2560 40.66z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1756.03 0L2560 40.66L2560 689.3299999999999L1542.1299999999999 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M1542.13 0L2560 689.3299999999999L2560 708.4999999999999L1379.68 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M1379.68 0L2560 708.4999999999999L2560 786.0299999999999L1239.51 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 1440L298.03 1440L0 806.47z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 806.47L298.03 1440L615.0799999999999 1440L0 689.51z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 689.51L615.0799999999999 1440L686.31 1440L0 269.45z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 269.45000000000005L686.31 1440L1844.1299999999999 1440L0 204.85000000000005z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1011'%3e%3crect width='2560' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
-.collapsible {
+#faqs-content {
+  margin-top: 300px;
+  margin-bottom: 200px;
+  /* padding: 50px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #125487; */
+}
+
+#faqs-head {
+  /* background-color: #125487; */
+  color: #fff;
+  text-align: center;
+}
+
+#faqs {
+  /* background-color: #125487; */
+  color: #fff;
+  margin-top: 200px;
+  font-size: 20px;
+}
+
+@keyframes revolve {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+
+.plus {
+  animation: revolve 0.5s;
+}
+.minus {
+  animation: revolve 0.5s;
+}
+
+.faq {
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+/* .collapsible {
   background-color: #125487;
   color: white;
   cursor: pointer;
@@ -655,32 +709,58 @@ a {
   outline: none;
   font-size: 15px;
   border-radius: 20px;
+} */
+.collapsible {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 15px;
 }
 
-.active1,
+.open-collapsible {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5em;
+}
+
+.collapse {
+  transition: 0.5s ease;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+/* .active1,
 .collapsible:hover {
   background-color: #1c2331;
-}
+} */
 
-.collapsible:after {
+/* .collapsible:after {
   content: "\002B";
   color: white;
   font-weight: bold;
   float: right;
   margin-left: 5px;
-}
+} */
 
 .active1:after {
   content: "\2212";
 }
 
 .content {
-  padding: 0 50px;
+  /* padding: 0 50px; */
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease-out;
-  background-color: #f1f1f1;
-  border-radius: 0 0 20px 20px;
+  /* background-color: #f1f1f1; */
+  /* border-radius: 0 0 20px 20px; */
 }
 
 /* faqs page end  */

@@ -181,7 +181,7 @@
                 data-bs-slide="prev">
                 <!-- <div
                     style="background-color: #000; border-radius: 50%; padding: 10px; justify-content: center; align-items: center; display: flex;"> -->
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <i style="color: #1c2331; font-size: 25px;" class="fa-solid fa-arrow-left" aria-hidden="true"></i>
                 <span class="visually-hidden">Previous</span>
                 <!-- </div> -->
             </button>
@@ -189,7 +189,8 @@
                 data-bs-slide="next">
                 <!-- <div
                     style="background-color: #000; border-radius: 50%; padding: 10px; justify-content: center; align-items: center; display: flex;"> -->
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <i style="color: #1c2331; font-size: 25px;" class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 <span class="visually-hidden">Next</span>
                 <!-- </div> -->
 
@@ -197,6 +198,39 @@
         </div>
     </div>
     <div id="about">
+        <div class="container">
+            <div class="" id="about-container" style="position: relative;">
+                <div
+                    style="top: 0; left: 0; right: 0; bottom: 0; position: absolute; background-color: #1c2331; border-radius: 10px; opacity: 0.9; box-shadow: -3px -3px 5px rgba(28, 35, 49, 0.3), 3px 3px 5px rgba(28, 35, 49, 0.3);">
+                </div>
+                <div class=" row about-row" style="z-index: 100; position: relative;">
+                    <div class="col-12">
+                        <div id="about-title" class="text-center">
+                            <span class="title2 h4">About Us. </span>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="col-12" style="display: flex; justify-content: center; align-items: center;">
+                        <div class="about-bio" style="text-align: center;">
+                            <p class="text-justify h5" style="text-align: center; margin-bottom: 30px;"> YAAS Group of
+                                Engineers is a
+                                specialist solar company based in Pakistan. With an extensive
+                                experience, we're installing and maintaining solar systems in Residential, commercial,
+                                Industrial as well as in Agricultural fields. We pride ourselves on offering quality
+                                services and pay keen attention to details. By choosing YAAS as your energy supplier,
+                                you
+                                can enjoy price security when you lock in long term saving.
+                            </p>
+                            <a href="https://github.com/malikhuzafah" class="btn my-btn2">
+                                <span>Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="about">
         <div class="container">
             <div class="row text-center">
                 <div class="col-12">
@@ -218,7 +252,7 @@
                 </dic>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- <div id="vision">
         <div class="container">
             <div class="row text-center">
@@ -389,8 +423,10 @@
             </div>
         </div>
     </div>
-    <div id="counter-div">
-        <div class="container">
+    <div id="counter-div" style="position: relative;">
+        <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #1c2331; opacity: 0.8;">
+        </div>
+        <div class="container" style="position: relative;">
             <div id="counter" class="row" align="center">
                 <div class="col-12 col-sm-6 col-md-3 count">
                     <span class="h3">kW Consumed</span>

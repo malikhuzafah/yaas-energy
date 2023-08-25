@@ -175,16 +175,26 @@ function scrollFunction() {
   }
 }
 $(document).ready(function () {
+  $(".minus").hide();
   $(".collapsible").click(function () {
-    var con = $(this).next();
-    if (con.height() <= "0") {
-      con.height("250px");
-      $(this).css("border-radius", "20px 20px 0 0");
-      $(this).css("transition", "0.3s ease-out");
+    var minus = $(this).find(".minus");
+    var plus = $(this).find(".plus");
+    if (minus.is(":visible")) {
+      minus.hide();
+      plus.show();
     } else {
-      con.height("0");
-      $(this).css("border-radius", "20px");
-      $(this).css("transition", "0.3s ease-in");
+      minus.show();
+      plus.hide();
     }
+    // var con = $(this).next();
+    // if (con.height() <= "0") {
+    //   con.height("250px");
+    //   // $(this).css("border-radius", "20px 20px 0 0");
+    //   $(this).css("transition", "0.3s ease-out");
+    // } else {
+    //   con.height("0");
+    //   // $(this).css("border-radius", "20px");
+    //   $(this).css("transition", "0.3s ease-in");
+    // }
   });
 });
