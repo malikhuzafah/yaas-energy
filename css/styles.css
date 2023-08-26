@@ -765,7 +765,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 1.5em;
+  font-size: 22px;
 }
 
 .collapse {
@@ -775,6 +775,10 @@ a {
 .card {
   background-color: transparent;
   border: none;
+}
+
+.card span {
+  font-size: 20px;
 }
 
 /* .active1,
@@ -1030,6 +1034,13 @@ a {
   }
   #testimonial-container {
     padding: 10px;
+  }
+  .card span {
+    font-size: 12px;
+  }
+
+  .open-collapsible {
+    font-size: 15px;
   }
 }
 
