@@ -27,7 +27,7 @@
     <title>YAAS Energy</title>
 </head>
 
-<body style="background-image: url('./images/faqsBack.svg');">
+<body style="background-image: url('./images/faqsBack.svg'); background-attachment: fixed;">
     <div>
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
@@ -108,117 +108,120 @@
         </header>
     </div>
 
-    <div class="container" id="" style="color: #1c2331; margin-top: 300px; padding: 0;">
+    <div class="" id="" style="color: #1c2331; margin-top: 300px; padding: 0;">
         <div class="container text-center" id="faqs-head">
-            <span class="h4 text-muted">FAQ's</span><br>
-            <span class="h2">Frequently Asked Questions!</span><br><br>
-            <span class="h4 text-muted">Have questions? We're here to help!</span>
+            <span class="h4 text-muted">Proects</span><br>
+            <span class="h2">We offer a wide range of solar solutions, from residential solar panels to
+                commercial solar farms.</span><br><br>
+            <span class="h4 text-muted">Here are some of the projects we have done!</span>
         </div>
-        <div class="container" id="faqs" style="background-color: #fff;">
-            <div class="row text-center">
-                <div class="col-3 tabs"><span>Residential</span>
-                </div>
-                <div class="col-3 tabs"><span>Commercial</span></div>
-                <div class="col-3 tabs"><span>Industrial</span></div>
-                <div class="col-3 tabs"><span>Agricultural</span></div>
+        <div class="" id="faqs">
+            <div class="row text-center w-100" style="margin: 0;">
+                <div class="col-3 tabs filter-button" data-filter="all"><span>Residential</span></div>
+                <div class="col-3 tabs filter-button" data-filter="all"><span>Commercial</span></div>
+                <div class="col-3 tabs filter-button" data-filter="web"><span>Industrial</span></div>
+                <div class="col-3 tabs filter-button" data-filter="flutter"><span>Agricultural</span></div>
             </div>
-            <div class="row" style="margin-top: 100px;">
-                <div class="project-item col-lg-4 col-md-6 col-sm-12 filter web">
-                    <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
-                        data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
-                        data-description="A MERN stack pahramacy app that lists medicines. The medicines can be added in cart and can be ordered. With user authentication and authorization."
-                        data-source="https://github.com/malikhuzafah/fanfund" data-bs-target="#staticBackdrop">
-                        <div class="container project-item-link">
-                            <img class="img-fluid" src="./images/main-1.jpg" alt=""
-                                style="height: 200px; width: 100%; border-radius: 5px; margin-bottom: 10px;">
-                            <div
-                                style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-                                <p class="project-item-title h3"><strong>Rice mill</strong></p>
-                                <p class="project-item-title h6">
-                                    <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
-                                </p>
-                            </div>
-                            <p class="h6 blockquote-footer">Industrial</p>
-                            <div
-                                style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-                                <p class=" h5">100kW ongrid</p>
-                                <span class="btn btn-xs projects-info"> <i
-                                        class="fas fa-circle-info info-icon"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content container">
-                            <div class="modal-header">
-                                <div>
-                                    <h4 class="modal-title" id="staticBackdropLabel"></h4>
-                                    <span class="h6" id="modal-subtitle"></span>
+            <div class="container">
+                <div class="row" style="margin-top: 50px; margin-bottom: 100px;">
+
+                    <br>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content container">
+                                <div class="modal-header">
+                                    <div>
+                                        <h4 class="modal-title" id="staticBackdropLabel"></h4>
+                                        <span class="h6" id="modal-subtitle"></span>
+                                    </div>
+                                    <span class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
                                 </div>
-                                <span class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
-                            </div>
-                            <div class="modal-body">
-                                <span class="h6 modal-description-heading">Description:</span>
-                                <p class="text-justify" id="modal-description"></p>
-                                <span class="h6 modal-tools-heading">Tools Used:</span>
-                                <div class="row" id="modal-tools"></div>
-                            </div>
-                            <div class="modal-footer">
-                                <div class="w-100 d-flex justify-content-evenly" align="center" id="modal-buttons">
+                                <div class="modal-body">
+                                    <span class="h6 modal-description-heading">Description:</span>
+                                    <p class="text-justify" id="modal-description"></p>
+                                    <span class="h6 modal-tools-heading">Tools Used:</span>
+                                    <div class="row" id="modal-tools"></div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="w-100 d-flex justify-content-evenly" align="center" id="modal-buttons">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-item col-lg-4 col-md-6 col-sm-12 filter web">
-                    <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
-                        data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
-                        data-description="A MERN stack pahramacy app that lists medicines. The medicines can be added in cart and can be ordered. With user authentication and authorization."
-                        data-source="https://github.com/malikhuzafah/fanfund" data-bs-target="#staticBackdrop">
-                        <div class="container project-item-link">
-                            <img class="img-fluid" src="./images/main-1.jpg" alt=""
-                                style="height: 200px; width: 100%; border-radius: 5px; margin-bottom: 10px;">
-                            <div
-                                style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-                                <p class="project-item-title h3"><strong>Rice mill</strong></p>
-                                <p class="project-item-title h6">
-                                    <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
-                                </p>
-                            </div>
-                            <p class="h6 blockquote-footer">Industrial</p>
-                            <div
-                                style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-                                <p class=" h5">100kW ongrid</p>
-                                <span class="btn btn-xs projects-info"> <i
-                                        class="fas fa-circle-info info-icon"></i></span>
+                    <div class="project-item col-lg-4 col-md-6 col-sm-12 filter web">
+                        <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
+                            data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
+                            data-description="A MERN stack pahramacy app that lists medicines. The medicines can be added in cart and can be ordered. With user authentication and authorization."
+                            data-source="https://github.com/malikhuzafah/fanfund" data-bs-target="#staticBackdrop">
+                            <div class="container project-item-link">
+                                <img class="img-fluid" src="./images/main-1.jpg" alt=""
+                                    style="height: 200px; width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                                <div
+                                    style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                    <p class="project-item-title h3"><strong>Rice mill</strong></p>
+                                    <p class="project-item-title h6">
+                                        <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
+                                    </p>
+                                </div>
+                                <p class="h6 blockquote-footer">Industrial</p>
+                                <div
+                                    style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                    <p class=" h5">100kW ongrid</p>
+                                    <span class="btn btn-xs projects-info"> <i
+                                            class="fas fa-circle-info info-icon"></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-item col-lg-4 col-md-6 col-sm-12 filter web">
-                    <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
-                        data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
-                        data-description="A MERN stack pahramacy app that lists medicines. The medicines can be added in cart and can be ordered. With user authentication and authorization."
-                        data-source="https://github.com/malikhuzafah/fanfund" data-bs-target="#staticBackdrop">
-                        <div class="container project-item-link">
-                            <img class="img-fluid" src="./images/main-1.jpg" alt=""
-                                style="height: 200px; width: 100%; border-radius: 5px; margin-bottom: 10px;">
-                            <div
-                                style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-                                <p class="project-item-title h3"><strong>Rice mill</strong></p>
-                                <p class="project-item-title h6">
-                                    <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
-                                </p>
+                    <div class="project-item col-lg-4 col-md-6 col-sm-12 filter flutter">
+                        <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
+                            data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
+                            data-description="A MERN stack pahramacy app that lists medicines. The medicines can be added in cart and can be ordered. With user authentication and authorization."
+                            data-source="https://github.com/malikhuzafah/fanfund" data-bs-target="#staticBackdrop">
+                            <div class="container project-item-link">
+                                <img class="img-fluid" src="./images/main-1.jpg" alt=""
+                                    style="height: 200px; width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                                <div
+                                    style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                    <p class="project-item-title h3"><strong>Rice mill</strong></p>
+                                    <p class="project-item-title h6">
+                                        <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
+                                    </p>
+                                </div>
+                                <p class="h6 blockquote-footer">Industrial</p>
+                                <div
+                                    style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                    <p class=" h5">100kW ongrid</p>
+                                    <span class="btn btn-xs projects-info"> <i
+                                            class="fas fa-circle-info info-icon"></i></span>
+                                </div>
                             </div>
-                            <p class="h6 blockquote-footer">Industrial</p>
-                            <div
-                                style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-                                <p class=" h5">100kW ongrid</p>
-                                <span class="btn btn-xs projects-info"> <i
-                                        class="fas fa-circle-info info-icon"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-item col-lg-4 col-md-6 col-sm-12 filter web">
+                        <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
+                            data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
+                            data-description="A MERN stack pahramacy app that lists medicines. The medicines can be added in cart and can be ordered. With user authentication and authorization."
+                            data-source="https://github.com/malikhuzafah/fanfund" data-bs-target="#staticBackdrop">
+                            <div class="container project-item-link">
+                                <img class="img-fluid" src="./images/main-1.jpg" alt=""
+                                    style="height: 200px; width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                                <div
+                                    style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                    <p class="project-item-title h3"><strong>Rice mill</strong></p>
+                                    <p class="project-item-title h6">
+                                        <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
+                                    </p>
+                                </div>
+                                <p class="h6 blockquote-footer">Industrial</p>
+                                <div
+                                    style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                    <p class=" h5">100kW ongrid</p>
+                                    <span class="btn btn-xs projects-info"> <i
+                                            class="fas fa-circle-info info-icon"></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>

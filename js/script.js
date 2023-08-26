@@ -27,6 +27,24 @@ $(window).scroll(function () {
   }
 });
 
+function filter() {
+  var value = $(this).attr("data-filter");
+  if (value == "all") {
+    $(".filter").show("1000");
+  } else {
+    $(".filter")
+      .not("." + value)
+      .hide("3000");
+    $(".filter")
+      .filter("." + value)
+      .show("3000");
+  }
+  // if ($(".filter-button").removeClass("btn-active")) {
+  //   $(this).removeClass("btn-active");
+  // }
+  // $(this).addClass("btn-active");
+}
+
 var icons = {
   React: "devicon-react-original",
   "React-native": "devicon-react-original",
@@ -164,6 +182,7 @@ $(function () {
   $("#navbar-back-btn").click(backNav);
   $(".projects-info").click(openModal);
   $(".project-item-container").click(openModal);
+  $(".filter-button").click(filter);
   todayDate();
   // $("#navbar-toggle").click(opennav);
   window.onscroll = function () {
