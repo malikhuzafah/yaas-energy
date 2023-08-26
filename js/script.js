@@ -27,6 +27,65 @@ $(window).scroll(function () {
   }
 });
 
+var icons = {
+  React: "devicon-react-original",
+  "React-native": "devicon-react-original",
+  NodeJs: "devicon-nodejs-plain",
+  Express: "devicon-express-original",
+  MongoDB: "devicon-mongodb-plain",
+  Flutter: "devicon-flutter-plain",
+  Unity: "devicon-unity-original",
+  Firebase: "devicon-firebase-plain",
+  JQuery: "devicon-jquery-plain",
+  Bootstrap: "devicon-bootstrap-plain",
+};
+
+function openModal() {
+  var source = this.getAttribute("data-source");
+  var demo = this.getAttribute("data-demo");
+  var visit = this.getAttribute("data-visit");
+  console.log(visit);
+  var buttons = $("#modal-buttons");
+  buttons.empty();
+  if (source != null) {
+    buttons.append(
+      '<a href="' +
+        source +
+        '" target="_blank"><span class="btn my-btn">Code <em class="fa-solid fa-up-right-from-square"></em></span></a>'
+    );
+  }
+  if (demo != null) {
+    buttons.append(
+      '<a href="' +
+        demo +
+        '" target="_blank"><span class="btn my-btn">Demo <em class="fa-solid fa-up-right-from-square"></em></span></a>'
+    );
+  }
+  if (visit != null) {
+    buttons.append(
+      '<a href="' +
+        visit +
+        '" target="_blank"><span class="btn my-btn">Visit <em class="fa-solid fa-up-right-from-square"></em></span></a>'
+    );
+  }
+  var tools = this.getAttribute("data-tools");
+  var toolsSplit = tools.split(" ");
+  var modalTools = $("#modal-tools");
+  modalTools.empty();
+  toolsSplit.forEach((element) => {
+    modalTools.append(
+      '<div class="col-6 col-sm-4"><span class="h6"><i class="' +
+        icons[element] +
+        '"></i> ' +
+        element +
+        "</span></div>"
+    );
+  });
+  $("#staticBackdropLabel").html(this.getAttribute("data-title"));
+  $("#modal-subtitle").html(this.getAttribute("data-subtitle"));
+  $("#modal-description").html(this.getAttribute("data-description"));
+}
+
 $(document).on("click", 'a[href^="#"]', function (event) {
   event.preventDefault();
   $("html, body").animate(
@@ -103,6 +162,8 @@ $(function () {
   $(".nav-close").click(closeNav);
   $("#proj-link").click(openProjects);
   $("#navbar-back-btn").click(backNav);
+  $(".projects-info").click(openModal);
+  $(".project-item-container").click(openModal);
   todayDate();
   // $("#navbar-toggle").click(opennav);
   window.onscroll = function () {
