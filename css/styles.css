@@ -245,6 +245,9 @@ a {
   color: white;
   /* background-attachment: fixed; */
 }
+#spinner {
+  display: none;
+}
 
 .main-content div {
   position: absolute;
@@ -350,6 +353,13 @@ a {
 }
 
 /* projects */
+
+#projects {
+  background-image: url("../images/Shiny\ Overlay.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .img-proj {
   border-radius: 30px;

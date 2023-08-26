@@ -114,7 +114,11 @@ $(function () {
   $(".nav-link-scroll").click(function () {
     $(window).scrollTop(0);
   });
+
   $("#send").click(function () {
+    $("#submitted").empty();
+    $("#send").hide();
+    $("#spinner").show();
     var c = 0;
     if ($("#name-input").val().length === 0) {
       $("#name-err").html("Name is required!");
@@ -137,20 +141,36 @@ $(function () {
     if (c >= 3) {
       var email = $("#email-input").val();
       var name = $("#name-input").val();
-      // Email.send({
-      //     Host : "smtp.gmail.com",
-      //     Username : "mhk282000@gmail.com",
-      //     Password : "malik1122",
-      //     To : 'huzafahrajput10@gmail.com',
-      //     From : email,
-      //     Subject : "This is the subject",
-      //     Body : "And this is the body"
-      // }).then(
-      //   message => alert(message)
-      // );
-      // $('#submitted').html('Message Recived! Thank You :)');
+      var name = $("#name-input").val();
+      var email = $("#email-input").val();
+      var message = $("#msg-input").val();
+      $.ajax({
+        url: "https://formsubmit.co/ajax/huzafahrajput10@gmail.com",
+        method: "POST",
+        data: {
+          name: name,
+          email: email,
+          message: message,
+        },
+        dataType: "json",
+        success: function (res) {
+          $("#name-input").val("");
+          $("#email-input").val("");
+          $("#msg-input").val("");
+          $("#send").show();
+          $("#spinner").hide();
+          $("#submitted").html("Message recieved<br>We will contact you soon!");
+        },
+        error: function (err) {
+          $("#send").show();
+          $("#spinner").hide();
+          alert("Somethong went wrong!");
+        },
+      });
     } else {
       $("#submitted").html("");
+      $("#send").show();
+      $("#spinner").hide();
     }
   });
 });
