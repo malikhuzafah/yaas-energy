@@ -306,12 +306,33 @@ function scrollFunction() {
   ) {
     $("#navbar").css("padding", "0 5%");
     $("#navbar").css("background", "#1C2331");
-    $(".nav-link span, #navbarDropdown").css("color", "#fff");
+    // $(".nav-link span, #navbarDropdown").css("color", "#fff");
+    $(".nav-link").css("color", "#fff");
+    $(".nav-link").hover(
+      function () {
+        $(this).css("color", "#fff");
+      },
+      function () {
+        $(this).css("color", "#fff");
+      }
+    );
+
+    // $("#navbarDropdown").css("color", "#fff");
     $("#navbar-btn button").removeClass("my-btn");
     $("#navbar-btn button").addClass("my-btn2");
   } else {
     $("#navbar").css("background-color", "transparent");
-    $(".nav-link span, #navbarDropdown").css("color", "#125468");
+    $(".nav-link").css("color", "#125468");
+    $(".nav-link").hover(
+      function () {
+        $(this).css("color", "#fff");
+      },
+      function () {
+        $(this).css("color", "#125468");
+      }
+    );
+    $(".active-link").css("color", "#fff");
+    // $("#navbarDropdown").css("color", "#125468");
     $("#navbar-btn button").addClass("my-btn");
     $("#navbar-btn button").removeClass("my-btn2");
     $("#navbar").css("padding", "2% 5%");

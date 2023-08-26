@@ -18,7 +18,7 @@ html {
 
 a {
   text-decoration: none;
-  color: black;
+  /* color: black; */
 }
 
 /* navbar */
@@ -50,16 +50,19 @@ a {
 
 .nav-link span,
 #navbarDropdown {
-  color: #125487;
+  /* color: #125487; */
   margin: 0 5px;
   font-weight: bold;
 }
 
 .nav-link {
-  border-radius: 25px;
+  border-radius: 5px;
+  color: #1c2331;
 }
 .nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #125487;
+  color: #fff;
+  /* background-color: rgba(0, 0, 0, 0.3); */
 }
 
 #slide-1 {
@@ -1306,4 +1309,9 @@ a {
   100% {
     -webkit-transform: rotate(-45deg);
   }
+}
+
+.active-link {
+  background-color: #125487;
+  color: #fff;
 }
