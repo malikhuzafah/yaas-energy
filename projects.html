@@ -27,8 +27,8 @@
     <title>YAAS Energy</title>
 </head>
 
-<body>
-    <div class="head">
+<body style="background-image: url('./images/faqsBack.svg');">
+    <div>
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
                 <div class="container-fluid">
@@ -42,13 +42,13 @@
                         <span class="backBtn" id="navbar-back-btn"><i class="fa-solid fa-arrow-left"></i></span>
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link nav-close" id="about-link"
-                                    href="#residential"><span>Residential</span></a></li>
+                                    href="#"><span>Residential</span></a></li>
                             <li class="nav-item"><a class="nav-link nav-close" id="portfolio-link"
-                                    href="#commercial"><span>Commercial</span></a></li>
+                                    href="#"><span>Commercial</span></a></li>
                             <li class="nav-item"><a class="nav-link nav-close" id="education-link"
-                                    href="#industrial"><span>Industrial</span></a></li>
+                                    href="#"><span>Industrial</span></a></li>
                             <li class="nav-item"><a class="nav-link nav-close" id="skills-link"
-                                    href="#agricultural"><span>Agricultural</span></a></li>
+                                    href="#"><span>Agricultural</span></a></li>
                         </ul>
                     </div>
                     <div class="collapse navbar-collapse align-middle menu show" id="navbarSupportedContent">
@@ -86,13 +86,13 @@
                                         Projects
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item nav-close" href="#residential">Residential</a></li>
+                                        <li><a class="dropdown-item nav-close" href="#">Residential</a></li>
                                         <hr class="dropdown-divider">
-                                        <li><a class="dropdown-item nav-close" href="#commercial">Commercial</a></li>
+                                        <li><a class="dropdown-item nav-close" href="#">Commercial</a></li>
                                         <hr class="dropdown-divider nav-close">
-                                        <li><a class="dropdown-item" href="#industrial">Industrial</a></li>
+                                        <li><a class="dropdown-item" href="#">Industrial</a></li>
                                         <hr class="dropdown-divider nav-close">
-                                        <li><a class="dropdown-item" href="#agricultural">Agricultural</a></li>
+                                        <li><a class="dropdown-item" href="#">Agricultural</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -108,39 +108,21 @@
         </header>
     </div>
 
-    <div class="w-100" id="portfolio">
-        <div class="container text-center">
-            <span class="title2 h1"><strong>Portfolio.</strong></span>
-            <hr class="heading-hr">
+    <div class="container" id="" style="color: #1c2331; margin-top: 300px; padding: 0;">
+        <div class="container text-center" id="faqs-head">
+            <span class="h4 text-muted">FAQ's</span><br>
+            <span class="h2">Frequently Asked Questions!</span><br><br>
+            <span class="h4 text-muted">Have questions? We're here to help!</span>
         </div>
-        <div class="container">
-            <div class="row" id="portfolioTiles">
-                <br>
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content container">
-                            <div class="modal-header">
-                                <div>
-                                    <h4 class="modal-title" id="staticBackdropLabel"></h4>
-                                    <span class="h6" id="modal-subtitle"></span>
-                                </div>
-                                <span class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
-                            </div>
-                            <div class="modal-body">
-                                <span class="h6 modal-description-heading">Description:</span>
-                                <p class="text-justify" id="modal-description"></p>
-                                <span class="h6 modal-tools-heading">Tools Used:</span>
-                                <div class="row" id="modal-tools"></div>
-                            </div>
-                            <!-- <div class="modal-footer">
-                                <div class="w-100 d-flex justify-content-evenly" align="center" id="modal-buttons">
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
+        <div class="container" id="faqs" style="background-color: #fff;">
+            <div class="row text-center">
+                <div class="col-3 tabs"><span>Residential</span>
                 </div>
-
+                <div class="col-3 tabs"><span>Commercial</span></div>
+                <div class="col-3 tabs"><span>Industrial</span></div>
+                <div class="col-3 tabs"><span>Agricultural</span></div>
+            </div>
+            <div class="row" style="margin-top: 100px;">
                 <div class="project-item col-lg-4 col-md-6 col-sm-12 filter web">
                     <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
                         data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
@@ -166,94 +148,300 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-            </div>
-        </div>
-    </div>
-
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p class="title2 h1 text-center"><strong>Contact Us.</strong></p>
-                </div>
-                <div class="col-sm-12 col-lg-6">
-                    <div class="container" id="contact-info">
-                        <p class="h2">Lets Get In Touch.</p>
-                        <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam veniam
-                            recusandae assumenda cupiditate, maiores nesciunt sapiente possimus fugiat amet laborum in
-                            voluptatum a animi dignissimos ut repellat porro alias tempore!</p>
-                        <p class="h4">Address:</p>
-                        <p class="h6">451, Karim Block Allama Iqbal Town, Lahore</p>
-                        <p class="h4">Email:</p>
-                        <p class="h6">info@yaasgroup.com.pk</p>
-                        <p class="h4">Phone:</p>
-                        <p class="h6">+923066882888</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-6">
-                    <div class="container" id="form">
-                        <div>
-                            <p class="h2">Say hello.</p>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="name-input" placeholder="Full Name">
-                            <p id="name-err"></p>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" id="email-input" placeholder="Email Address">
-                            <p id="email-err"></p>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" id="msg-input" rows="3" placeholder="Message"></textarea>
-                            <p id="msg-err"></p>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <span class="h5" id="submitted"></span>
+                <br>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content container">
+                            <div class="modal-header">
+                                <div>
+                                    <h4 class="modal-title" id="staticBackdropLabel"></h4>
+                                    <span class="h6" id="modal-subtitle"></span>
+                                </div>
+                                <span class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
                             </div>
-                            <div class="col-6 text-end">
-                                <button id="send" class="my-btn2 btn">Send</button>
-                                <div class="spinner-border float-end" role="status" id="spinner">
-                                    <span class="visually-hidden text-end">Loading...</span>
+                            <div class="modal-body">
+                                <span class="h6 modal-description-heading">Description:</span>
+                                <p class="text-justify" id="modal-description"></p>
+                                <span class="h6 modal-tools-heading">Tools Used:</span>
+                                <div class="row" id="modal-tools"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="w-100 d-flex justify-content-evenly" align="center" id="modal-buttons">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="project-item col-lg-4 col-md-6 col-sm-12 filter web">
+                    <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
+                        data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
+                        data-description="A MERN stack pahramacy app that lists medicines. The medicines can be added in cart and can be ordered. With user authentication and authorization."
+                        data-source="https://github.com/malikhuzafah/fanfund" data-bs-target="#staticBackdrop">
+                        <div class="container project-item-link">
+                            <img class="img-fluid" src="./images/main-1.jpg" alt=""
+                                style="height: 200px; width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                            <div
+                                style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                <p class="project-item-title h3"><strong>Rice mill</strong></p>
+                                <p class="project-item-title h6">
+                                    <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
+                                </p>
+                            </div>
+                            <p class="h6 blockquote-footer">Industrial</p>
+                            <div
+                                style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                <p class=" h5">100kW ongrid</p>
+                                <span class="btn btn-xs projects-info"> <i
+                                        class="fas fa-circle-info info-icon"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item col-lg-4 col-md-6 col-sm-12 filter web">
+                    <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
+                        data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
+                        data-description="A MERN stack pahramacy app that lists medicines. The medicines can be added in cart and can be ordered. With user authentication and authorization."
+                        data-source="https://github.com/malikhuzafah/fanfund" data-bs-target="#staticBackdrop">
+                        <div class="container project-item-link">
+                            <img class="img-fluid" src="./images/main-1.jpg" alt=""
+                                style="height: 200px; width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                            <div
+                                style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                <p class="project-item-title h3"><strong>Rice mill</strong></p>
+                                <p class="project-item-title h6">
+                                    <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
+                                </p>
+                            </div>
+                            <p class="h6 blockquote-footer">Industrial</p>
+                            <div
+                                style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                <p class=" h5">100kW ongrid</p>
+                                <span class="btn btn-xs projects-info"> <i
+                                        class="fas fa-circle-info info-icon"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="w-100" id="portfolio">
+                <div class="container text-center">
+                    <span class="title2 h1" style="color: #1c2331;"><strong>Residential.</strong></span>
+                    <hr class="heading-hr">
+                </div>
+                <div class="container">
+                    <div class="row" id="portfolioTiles">
+                        <br>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content container">
+                                    <div class="modal-header">
+                                        <div>
+                                            <h4 class="modal-title" id="staticBackdropLabel"></h4>
+                                            <span class="h6" id="modal-subtitle"></span>
+                                        </div>
+                                        <span class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span class="h6 modal-description-heading">Description:</span>
+                                        <p class="text-justify" id="modal-description"></p>
+                                        <span class="h6 modal-tools-heading">Tools Used:</span>
+                                        <div class="row" id="modal-tools"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="w-100 d-flex justify-content-evenly" align="center"
+                                            id="modal-buttons">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item col-lg-4 col-md-6 col-sm-12 filter web">
+                            <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
+                                data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
+                                data-description="A MERN stack pahramacy app that lists medicines. The medicines can be added in cart and can be ordered. With user authentication and authorization."
+                                data-source="https://github.com/malikhuzafah/fanfund" data-bs-target="#staticBackdrop">
+                                <div class="container project-item-link">
+                                    <img class="img-fluid" src="./images/main-1.jpg" alt=""
+                                        style="height: 200px; width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                                    <div
+                                        style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                        <p class="project-item-title h3"><strong>Rice mill</strong></p>
+                                        <p class="project-item-title h6">
+                                            <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
+                                        </p>
+                                    </div>
+                                    <p class="h6 blockquote-footer">Industrial</p>
+                                    <div
+                                        style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                        <p class=" h5">100kW ongrid</p>
+                                        <span class="btn btn-xs projects-info"> <i
+                                                class="fas fa-circle-info info-icon"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100" id="portfolio">
+                <div class="container text-center">
+                    <span class="title2 h1" style="color: #1c2331;"><strong>Residential.</strong></span>
+                    <hr class="heading-hr">
+                </div>
+                <div class="container">
+                    <div class="row" id="portfolioTiles">
+                        <div class="project-item col-lg-4 col-md-6 col-sm-12 filter web">
+                            <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
+                                data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
+                                data-description="A MERN stack pahramacy app that lists medicines. The medicines can be added in cart and can be ordered. With user authentication and authorization."
+                                data-source="https://github.com/malikhuzafah/fanfund" data-bs-target="#staticBackdrop">
+                                <div class="container project-item-link">
+                                    <img class="img-fluid" src="./images/main-1.jpg" alt=""
+                                        style="height: 200px; width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                                    <div
+                                        style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                        <p class="project-item-title h3"><strong>Rice mill</strong></p>
+                                        <p class="project-item-title h6">
+                                            <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
+                                        </p>
+                                    </div>
+                                    <p class="h6 blockquote-footer">Industrial</p>
+                                    <div
+                                        style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                        <p class=" h5">100kW ongrid</p>
+                                        <span class="btn btn-xs projects-info"> <i
+                                                class="fas fa-circle-info info-icon"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100" id="portfolio">
+                <div class="container text-center">
+                    <span class="title2 h1" style="color: #1c2331;"><strong>Residential.</strong></span>
+                    <hr class="heading-hr">
+                </div>
+                <div class="container">
+                    <div class="row" id="portfolioTiles">
+                        <div class="project-item col-lg-4 col-md-6 col-sm-12 filter web">
+                            <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
+                                data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
+                                data-description="A MERN stack pahramacy app that lists medicines. The medicines can be added in cart and can be ordered. With user authentication and authorization."
+                                data-source="https://github.com/malikhuzafah/fanfund" data-bs-target="#staticBackdrop">
+                                <div class="container project-item-link">
+                                    <img class="img-fluid" src="./images/main-1.jpg" alt=""
+                                        style="height: 200px; width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                                    <div
+                                        style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                        <p class="project-item-title h3"><strong>Rice mill</strong></p>
+                                        <p class="project-item-title h6">
+                                            <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
+                                        </p>
+                                    </div>
+                                    <p class="h6 blockquote-footer">Industrial</p>
+                                    <div
+                                        style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                        <p class=" h5">100kW ongrid</p>
+                                        <span class="btn btn-xs projects-info"> <i
+                                                class="fas fa-circle-info info-icon"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100" id="portfolio">
+                <div class="container text-center">
+                    <span class="title2 h1" style="color: #1c2331;"><strong>Residential.</strong></span>
+                    <hr class="heading-hr">
+                </div>
+                <div class="container">
+                    <div class="row" id="portfolioTiles">
+                        <div class="project-item col-lg-4 col-md-6 col-sm-12 filter web">
+                            <div class="container project-item-container" data-title="Rice mill" data-bs-toggle="modal"
+                                data-subtitle="100kW ongrid" data-tools="React NodeJs MongoDB Express"
+                                data-description="A MERN stack pahramacy app that lists medicines. The medicines can be added in cart and can be ordered. With user authentication and authorization."
+                                data-source="https://github.com/malikhuzafah/fanfund" data-bs-target="#staticBackdrop">
+                                <div class="container project-item-link">
+                                    <img class="img-fluid" src="./images/main-1.jpg" alt=""
+                                        style="height: 200px; width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                                    <div
+                                        style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                        <p class="project-item-title h3"><strong>Rice mill</strong></p>
+                                        <p class="project-item-title h6">
+                                            <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
+                                        </p>
+                                    </div>
+                                    <p class="h6 blockquote-footer">Industrial</p>
+                                    <div
+                                        style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                                        <p class=" h5">100kW ongrid</p>
+                                        <span class="btn btn-xs projects-info"> <i
+                                                class="fas fa-circle-info info-icon"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div id="contact" style="color: #1c2331;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" style="margin-bottom: 150px;">
+                    <div class="h3">
+                        <span><strong>Still have Questions?</strong></span>
+                    </div>
+                    <div class="text-muted">
+                        <span>Can't find the answer you're looking for? Please contact our
+                            friedly team.</span>
+                    </div>
+                    <div class="container" style="padding: 20px;">
+                        <a href="./contact.html">
+                            <button class="my-btn5 btn"><span>Contact Us</span></button>
+                        </a>
+                    </div>
+                </div>
                 <div class="col-12">
                     <div class="container">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.595555385114!2d74.2751859150788!3d31.507798981373803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919030d1451678b%3A0x33372ed7095590e4!2sYAAS%20ENERGY%20PVT%20LTD!5e0!3m2!1sen!2s!4v1652647098392!5m2!1sen!2s"
-                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.1498892300247!2d74.2773746!3d31.507799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919030d1451678b%3A0x33372ed7095590e4!2sYAAS%20ENERGY%20PVT%20LTD!5e1!3m2!1sen!2s!4v1693057394531!5m2!1sen!2s"
+                            width="100%" height="450" style="border:0; border-radius: 5px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-
     <footer class="text-center text-white">
-        <div class="row" id="footer">
+        <div class="row" id="footer" style="background-color: #1c2331;">
             <div class="container">
                 <div class="social-icons spinned">
-                    <a class="item facebook" href="#" target="_blank"><em class="fa fa-facebook"></em></a>
-                    <a class="item linkedin" href="#" target="_blank"><em class="fa fa-linkedin"></em></a>
-                    <a class="item instagram" href="#" target="_blank"><em class="fa fa-instagram"></em></a>
-                    <a class="item phone" href="tel:+923066882888" target="_blank"><em
-                            class="fa-solid fa-phone"></em></a>
+                    <a style="background-color: #fff; color: #125487;" class="item facebook" href="#"
+                        target="_blank"><em class="fa fa-facebook"></em></a>
+                    <a style="background-color: #fff; color: #125487;" class="item linkedin" href="#"
+                        target="_blank"><em class="fa fa-linkedin"></em></a>
+                    <a style="background-color: #fff; color: #125487;" class="item instagram" href="#"
+                        target="_blank"><em class="fa fa-instagram"></em></a>
+                    <a style="background-color: #fff; color: #125487;" class="item phone" href="tel:+923066882888"
+                        target="_blank"><em class="fa-solid fa-phone"></em></a>
                 </div>
             </div>
         </div>
         <div class="text-center p-2" id="copyright">
-            <span>&copy; <em id="date"></em>YAAS Energy. All rights reserved</span>
+            <span style="color: #125487">&copy; <em id="date"></em>YAAS Energy. All rights reserved</span>
         </div>
     </footer>
+
 
 </body>
 
