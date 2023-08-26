@@ -1293,3 +1293,9 @@ a {
   color: #1c2331;
   transition: 0.5s;
 }
+
+.tab-active {
+  background-color: #ffdb58;
+  color: #1c2331;
+  border-bottom: 0;
+}

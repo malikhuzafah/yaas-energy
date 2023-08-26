@@ -27,6 +27,8 @@ $(window).scroll(function () {
   }
 });
 
+var loc = "commercial";
+
 function filter() {
   var value = $(this).attr("data-filter");
   if (value == "all") {
@@ -39,10 +41,10 @@ function filter() {
       .filter("." + value)
       .show("3000");
   }
-  // if ($(".filter-button").removeClass("btn-active")) {
-  //   $(this).removeClass("btn-active");
-  // }
-  // $(this).addClass("btn-active");
+  if ($(".filter-button").removeClass("tab-active")) {
+    $(this).removeClass("tab-active");
+  }
+  $(this).addClass("tab-active");
 }
 
 var icons = {
@@ -183,12 +185,46 @@ $(function () {
   $(".projects-info").click(openModal);
   $(".project-item-container").click(openModal);
   $(".filter-button").click(filter);
-  $(".filter")
-    .not("." + "residential")
-    .hide("3000");
-  $(".filter")
-    .filter("." + "residential")
-    .show("3000");
+  if (localStorage.getItem("loc") !== null) {
+    $(".filter")
+      .not("." + localStorage.getItem("loc"))
+      .hide("3000");
+    $(".filter")
+      .filter("." + localStorage.getItem("loc"))
+      .show("3000");
+    if ($(".filter-button").removeClass("tab-active")) {
+      $("." + localStorage.getItem("loc") + "-tab").removeClass("tab-active");
+    }
+    $("." + localStorage.getItem("loc") + "-tab").addClass("tab-active");
+  } else {
+    $(".filter")
+      .not("." + "residential")
+      .hide("3000");
+    $(".filter")
+      .filter("." + "residential")
+      .show("3000");
+    if ($(".filter-button").removeClass("tab-active")) {
+      $(".residential-tab").removeClass("tab-active");
+    }
+    $(".residential-tab").addClass("tab-active");
+  }
+
+  $(".residential-link").click((e) => {
+    localStorage.setItem("loc", "residential");
+    location.replace("./projects.html");
+  });
+  $(".commercial-link").click(() => {
+    localStorage.setItem("loc", "commercial");
+    location.replace("./projects.html");
+  });
+  $(".industrial-link").click(() => {
+    localStorage.setItem("loc", "industrial");
+    location.replace("./projects.html");
+  });
+  $(".agricultural-link").click(() => {
+    localStorage.setItem("loc", "agricultural");
+    location.replace("./projects.html");
+  });
 
   todayDate();
   // $("#navbar-toggle").click(opennav);
