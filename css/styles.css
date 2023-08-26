@@ -473,9 +473,10 @@ a {
 #name-err,
 #email-err,
 #msg-err,
+#phone-err,
 #submitted {
   font-weight: bolder;
-  color: red;
+  /* color: red; */
 }
 
 #contact-info {

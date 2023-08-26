@@ -146,7 +146,7 @@
                     <div class=""
                         style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px;padding: 20px; background-color: #fff;">
                         <div class=""
-                            style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px; height: 50px; width: 50px; display: flex; justify-content: center; align-items: center;">
+                            style="background-color: #f9f9f9; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px; height: 50px; width: 50px; display: flex; justify-content: center; align-items: center;">
                             <i class="fa-regular fa-comments"></i>
                         </div>
                         <div style="margin-top: 50px;">
@@ -165,7 +165,7 @@
                     <div class=""
                         style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px;padding: 20px; background-color: #fff;">
                         <div class=""
-                            style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px; height: 50px; width: 50px; display: flex; justify-content: center; align-items: center;">
+                            style="background-color: #f9f9f9; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px; height: 50px; width: 50px; display: flex; justify-content: center; align-items: center;">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <div style="margin-top: 50px;">
@@ -185,7 +185,7 @@
                     <div class=""
                         style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px;padding: 20px; background-color: #fff;">
                         <div class=""
-                            style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px; height: 50px; width: 50px; display: flex; justify-content: center; align-items: center;">
+                            style="background-color: #f9f9f9; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px; height: 50px; width: 50px; display: flex; justify-content: center; align-items: center;">
                             <i class="fa-solid fa-phone"></i>
                         </div>
                         <div style="margin-top: 50px;">
@@ -228,7 +228,7 @@
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <select class="form-select" id="type-input" aria-label="Default select example">
-                            <option selected>System Type</option>
+                            <option selected>Select System Type</option>
                             <option value="residential">Residential</option>
                             <option value="commercial">Commercial</option>
                             <option value="industrial">Industrial</option>
@@ -247,10 +247,13 @@
                     <div class="col-6">
                         <span class="h5" id="submitted"></span>
                     </div>
-                    <div class="col-6 text-center">
+                    <div class="col-6 text-center" style="display: flex; justify-content: center; align-items: center;">
                         <button id="send" class="my-btn5 btn"
                             style="font-size: 18px; width: 100%; padding: 10px; border-radius: 5px;"
                             type="submit">Send</button>
+                        <div class="spinner-border float-end" role="status" id="spinner">
+                            <span class="visually-hidden text-end">Loading...</span>
+                        </div>
                     </div>
                 </div>
                 <!-- </form> -->

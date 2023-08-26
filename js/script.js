@@ -249,10 +249,10 @@ $(function () {
       $("#name-err").html("");
       c++;
     }
-    if ($("#email-input").val().length === 0) {
-      $("#email-err").html("Email is required!");
+    if ($("#phone-input").val().length === 0) {
+      $("#phone-err").html("Phone number is required!");
     } else {
-      $("#email-err").html("");
+      $("#phone-err").html("");
       c++;
     }
     if ($("#msg-input").val().length === 0) {
@@ -264,22 +264,32 @@ $(function () {
     if (c >= 3) {
       var email = $("#email-input").val();
       var name = $("#name-input").val();
-      var name = $("#name-input").val();
-      var email = $("#email-input").val();
+      var phone = $("#phone-input").val();
+      var city = $("#email-input").val();
+      var type = $("#type-input").val();
+      var bill = $("#bill-input").val();
       var message = $("#msg-input").val();
       $.ajax({
         url: "https://formsubmit.co/ajax/huzafahrajput10@gmail.com",
         method: "POST",
         data: {
-          name: name,
-          email: email,
-          message: message,
+          name,
+          email,
+          phone,
+          city,
+          type,
+          bill,
+          message,
         },
         dataType: "json",
         success: function (res) {
           $("#name-input").val("");
           $("#email-input").val("");
           $("#msg-input").val("");
+          $("#phone-input").val("");
+          $("#city-input").val("");
+          $("#bill-input").val("");
+          $("#type-input").val("");
           $("#send").show();
           $("#spinner").hide();
           $("#submitted").html("Message recieved<br>We will contact you soon!");
