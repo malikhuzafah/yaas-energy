@@ -209,7 +209,7 @@ $(function () {
     $(".residential-tab").addClass("tab-active");
   }
 
-  $(".residential-link").click((e) => {
+  $(".residential-link").click(() => {
     localStorage.setItem("loc", "residential");
     location.replace("./projects.html");
   });

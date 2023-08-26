@@ -35,43 +35,93 @@
                     <a class="navbar-brand" href="./index.html">
                         <div id="logo"></div>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggle">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler" type="button" id="navbar-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                        <!-- <span style="color: black; background-color: black;" class="navbar-toggler-icon"></span> -->
                     </button>
-                    <div class="collapse navbar-collapse align-middle" id="navbarSupportedContent">
+                    <div id="navbarSupportedContent2">
+                        <span class="backBtn" id="navbar-back-btn"><i class="fa-solid fa-arrow-left"></i></span>
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" id="about-link" href="./about.html"><span>About</span></a>
+                                <a class="nav-link nav-close residential-link" id="about-link" href="./projects.html">
+                                    <span>Residential</span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="portfolio-link" href="./faqs.html"><span>FAQ's</span></a>
+                                <a class="nav-link nav-close commercial-link" id="portfolio-link"
+                                    href="./projects.html">
+                                    <span>Commercial</span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" id="education-link"
+                                <a class="nav-link nav-close industrial-link" id="education-link"
+                                    href="./projects.html">
+                                    <span>Industrial</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-close agricultural-link" id="skills-link" href="./projects.html">
+                                    <span>Agricultural</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse align-middle menu show" id="navbarSupportedContent">
+                        <span class="closebtn" id="navbar-close-btn"><i class="fa-solid fa-xmark"></i></span>
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link nav-close nav-link-scroll" id="about-link"
+                                    href="./about.html"><span>About</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-close nav-link-scroll" id="portfolio-link"
+                                    href="./faqs.html"><span>FAQ's</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-close nav-link-scroll" id="education-link"
                                     href="./career.html"><span>Career</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="skills-link" href="./partners.html"><span>Partners</span></a>
+                                <a class="nav-link nav-close nav-link-scroll" id="skills-link"
+                                    href="./partners.html"><span>Partners</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="proj-link" href="#"><span>Contact</span></a>
+                                <a class="nav-link nav-close nav-link-scroll" id="contact-link"
+                                    href="#"><span>Contact</span></a>
+                            </li>
+                            <li class="nav-item" id="smallProj">
+                                <a href="#" class="nav-link nav-link-scroll" id="proj-link">
+                                    <span>Projects <i class="fa fa-solid fa-arrow-right"></i></span>
+                                </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Projects
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Residential</a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item" href="#">Commercial</a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item" href="#">Industrial</a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item" href="#">Agricultural</a></li>
-                                </ul>
+                                <div id="dropdown">
+                                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Projects
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item nav-close residential-link"
+                                                href="./projects.html">Residential</a>
+                                        </li>
+                                        <hr class="dropdown-divider">
+                                        <li>
+                                            <a class="dropdown-item nav-close commercial-link"
+                                                href="./projects.html">Commercial</a>
+                                        </li>
+                                        <hr class="dropdown-divider">
+                                        <li>
+                                            <a class="dropdown-item nav-close industrial-link"
+                                                href="./projects.html">Industrial</a>
+                                        </li>
+                                        <hr class="dropdown-divider">
+                                        <li>
+                                            <a class="dropdown-item nav-close agricultural-link"
+                                                href="./projects.html">Agricultural</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                         <div id="navbar-btn">
