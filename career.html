@@ -27,8 +27,8 @@
     <title>YAAS Energy</title>
 </head>
 
-<body>
-    <div class="other-head" id="career-head">
+<body id="faq-body">
+    <div>
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
                 <div class="container-fluid">
@@ -37,7 +37,6 @@
                     </a>
                     <button class="navbar-toggler" type="button" id="navbar-toggle">
                         <i class="fa-solid fa-bars"></i>
-                        <!-- <span style="color: black; background-color: black;" class="navbar-toggler-icon"></span> -->
                     </button>
                     <div id="navbarSupportedContent2">
                         <span class="backBtn" id="navbar-back-btn"><i class="fa-solid fa-arrow-left"></i></span>
@@ -133,69 +132,97 @@
                 </div>
             </nav>
         </header>
-        <div class="w-100">
-            <div class="img-fluid head-img" id="career-head-img">
-                <div class="container">
-                    <span class="h1">Careers</span>
+    </div>
+
+    <div class="container" id="faqs-content">
+        <div class="container text-center" id="faqs-head">
+            <!-- <span class="h4 text-muted">FAQ's</span><br> -->
+            <span class="h2">Solar is the future, and we're here to make it happen together</span><br><br>
+            <span class="h4 text-muted">Here are the current job oppenings</span>
+        </div>
+        <div class="container" id="faqs">
+            <div class="row">
+                <div class="container faq">
+                    <button class="collapsible" type="button" data-bs-toggle="collapse" data-bs-target="#col0"
+                        aria-expanded="false" aria-controls="col0">
+                        <div class="open-collapsible">
+                            <div>
+                                <span><strong>Solar technician</strong></span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-circle-plus plus"></i>
+                                <i class="fa-solid fa-circle-minus minus"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="col0">
+                            <div class="card card-body">
+                                <span>
+                                    <strong>Solar Technician</strong><br>
+                                    There are many reasons why homeowners go solar, but improving the environment and
+                                    cutting energy costs are the most common. Many people are aware that solar upgrade
+                                    the
+                                    home efficiency and are eager to reduce their energy costs by installing solar.
+                                    <br><br><strong>Qualification</strong><br>
+                                    There are many reasons why homeowners go solar, but improving the environment and
+                                    cutting energy costs are the most common. Many people are aware that solar upgrade
+                                    the
+                                    home efficiency and are eager to reduce their energy costs by installing solar.
+                                    <br><br><strong>Experience</strong><br>
+                                    There are many reasons why homeowners go solar, but improving the environment
+                                    <br><br><strong>Location</strong><br>
+                                    Lahore
+                                </span><br>
+                                <span class="btn my-btn5">Apply</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div id="contact">
+    <div id="contact" style="color: #1c2331;">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <p class="title2 h1 text-center"><strong>Contact Us.</strong></p>
-                </div>
-                <div class="col-sm-12 col-lg-6">
-                    <div class="container" id="contact-info">
-                        <p class="h2">Lets Get In Touch.</p>
-                        <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam veniam
-                            recusandae assumenda cupiditate, maiores nesciunt sapiente possimus fugiat amet laborum in
-                            voluptatum a animi dignissimos ut repellat porro alias tempore!</p>
-                        <p class="h4">Address:</p>
-                        <p class="h6">451, Karim Block Allama Iqbal Town, Lahore</p>
-                        <p class="h4">Email:</p>
-                        <p class="h6">info@yaasgroup.com.pk</p>
-                        <p class="h4">Phone:</p>
-                        <p class="h6">+923066882888</p>
+                <div class="col-12 text-center" style="margin-bottom: 150px;">
+                    <div class="h3">
+                        <span><strong>Didn't find what you were looking for?</strong></span>
+                    </div>
+                    <div class="text-muted">
+                        <span>Send your CV to <span
+                                style="text-decoration: underline;">careers@yaasenergy.pk</span></span>
+                    </div>
+                    <div class="container" style="padding: 20px;">
+                        <a target="_blank" href="">
+                            <button class="my-btn5 btn"><span>Send CV</span></button>
+                        </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-6">
-                    <div class="container" id="form">
-                        <div>
-                            <p class="h2">Say hello.</p>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="name-input" placeholder="Full Name">
-                            <p id="name-err"></p>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" id="email-input" placeholder="Email Address">
-                            <p id="email-err"></p>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" id="msg-input" rows="3" placeholder="Message"></textarea>
-                            <p id="msg-err"></p>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <span class="h5" id="submitted"></span>
-                            </div>
-                            <div class="col-6 text-end">
-                                <button id="send" class="my-btn2 btn"><strong>Send</strong></button>
-                            </div>
-                        </div>
+                <div class="col-12 text-center" style="margin-bottom: 150px;">
+                    <div style="margin-bottom: 10px;">
+                        <i style="font-size: 100px;" class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="h3">
+                        <span><strong>Our Office</strong></span>
+                    </div>
+                    <div class="text-muted">
+                        <span>451, Karim Block Allama Iqbal Town, Lahore</span>
+                    </div>
+                    <div class="container" style="padding: 20px;">
+                        <a target="_blank"
+                            href="https://maps.google.com/maps/dir//YAAS+ENERGY+PVT+LTD+Plot+451+Karim+Block+Allama+Iqbal+Town,+Lahore,+Punjab+54570/@31.507799,74.2773746,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3919030d1451678b:0x33372ed7095590e4">
+                            <button class="my-btn5 btn"><span>Get Directions</span></button>
+                        </a>
                     </div>
                 </div>
+
                 <div class="col-12">
                     <div class="container">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.595555385114!2d74.2751859150788!3d31.507798981373803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919030d1451678b%3A0x33372ed7095590e4!2sYAAS%20ENERGY%20PVT%20LTD!5e0!3m2!1sen!2s!4v1652647098392!5m2!1sen!2s"
-                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.1498892300247!2d74.2773746!3d31.507799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919030d1451678b%3A0x33372ed7095590e4!2sYAAS%20ENERGY%20PVT%20LTD!5e1!3m2!1sen!2s!4v1693057394531!5m2!1sen!2s"
+                            width="100%" height="450" style="border:0; border-radius: 5px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -203,21 +230,25 @@
     </div>
 
     <footer class="text-center text-white">
-        <div class="row" id="footer">
+        <div class="row" id="footer" style="background-color: #1c2331;">
             <div class="container">
                 <div class="social-icons spinned">
-                    <a class="item facebook" href="#" target="_blank"><em class="fa fa-facebook"></em></a>
-                    <a class="item linkedin" href="#" target="_blank"><em class="fa fa-linkedin"></em></a>
-                    <a class="item instagram" href="#" target="_blank"><em class="fa fa-instagram"></em></a>
-                    <a class="item phone" href="tel:+923066882888" target="_blank"><em
-                            class="fa-solid fa-phone"></em></a>
+                    <a style="background-color: #fff; color: #125487;" class="item facebook" href="#"
+                        target="_blank"><em class="fa fa-facebook"></em></a>
+                    <a style="background-color: #fff; color: #125487;" class="item linkedin" href="#"
+                        target="_blank"><em class="fa fa-linkedin"></em></a>
+                    <a style="background-color: #fff; color: #125487;" class="item instagram" href="#"
+                        target="_blank"><em class="fa fa-instagram"></em></a>
+                    <a style="background-color: #fff; color: #125487;" class="item phone" href="tel:+923066882888"
+                        target="_blank"><em class="fa-solid fa-phone"></em></a>
                 </div>
             </div>
         </div>
         <div class="text-center p-2" id="copyright">
-            <span>&copy; <em id="date"></em>YAAS Energy. All rights reserved</span>
+            <span style="color: #125487">&copy; <em id="date"></em>YAAS Energy. All rights reserved</span>
         </div>
     </footer>
+
 </body>
 
 </html>
