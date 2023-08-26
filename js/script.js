@@ -183,6 +183,13 @@ $(function () {
   $(".projects-info").click(openModal);
   $(".project-item-container").click(openModal);
   $(".filter-button").click(filter);
+  $(".filter")
+    .not("." + "residential")
+    .hide("3000");
+  $(".filter")
+    .filter("." + "residential")
+    .show("3000");
+
   todayDate();
   // $("#navbar-toggle").click(opennav);
   window.onscroll = function () {
