@@ -1145,8 +1145,9 @@ a {
   }
 
   .tabs {
-    padding: 5px 0;
+    padding: 15px 0;
     font-size: 15px;
+    font-weight: bold;
   }
 }
 
