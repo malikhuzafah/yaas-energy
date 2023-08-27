@@ -238,6 +238,17 @@ $(function () {
     $(window).scrollTop(0);
   });
 
+  $(".proj-container").hover(
+    function () {
+      $(this).find(".proj-overlay").css("height", "100%");
+      $(this).find(".proj-overlay").css("transition", "0.5s ease-in-out");
+    },
+    function () {
+      $(this).find(".proj-overlay").css("height", "0");
+      $(this).find(".proj-overlay").css("transition", "0.5s ease-in-out");
+    }
+  );
+
   $("#send").click(function () {
     $("#submitted").empty();
     $("#send").hide();
