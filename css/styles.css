@@ -788,6 +788,23 @@ a {
   transition: 0.5s ease;
 }
 
+.collapsible-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.collapsible-icon {
+  border: 1px solid #aaafb4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
 .card {
   background-color: transparent;
   border: none;
