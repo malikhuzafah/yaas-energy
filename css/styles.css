@@ -27,6 +27,9 @@ a {
   background-image: url("../images/logo-02.png");
   height: 90px;
   width: 160px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .head {
@@ -1140,7 +1143,7 @@ a {
     display: inline;
   }
   #logo {
-    background-image: url("../images/logo-03.png");
+    /* background-image: url("../images/logo-03.png"); */
     height: 68px;
     width: 120px;
   }
