@@ -906,6 +906,22 @@ a {
   color: #1c2331;
 }
 
+.contact-directions-container {
+  margin-bottom: 150px;
+}
+
+.contact-directions-icon-container {
+  margin-bottom: 10px;
+}
+
+.contact-directions-icon {
+  font-size: 100px;
+}
+
+.contact-directions {
+  padding: 20px;
+}
+
 /* contact page end */
 
 #navbar-toggle {
