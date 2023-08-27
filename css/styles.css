@@ -700,6 +700,7 @@ a {
 #faqs-content {
   margin-top: 300px;
   margin-bottom: 100px;
+  color: #1c2331;
   /* padding: 50px;
   border-radius: 20px;
   background-color: #fff;
@@ -812,6 +813,10 @@ a {
   /* border-radius: 0 0 20px 20px; */
 }
 
+.faqs-contact-btn-container {
+  padding: 20px;
+}
+
 /* faqs page end  */
 
 /* Career Page */
@@ -906,7 +911,7 @@ a {
   color: #1c2331;
 }
 
-.contact-directions-container {
+.contact-container {
   margin-bottom: 150px;
 }
 
