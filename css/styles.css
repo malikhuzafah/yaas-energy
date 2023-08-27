@@ -818,6 +818,7 @@ a {
 .card {
   background-color: transparent;
   border: none;
+  text-align: justify;
 }
 
 .card span {
