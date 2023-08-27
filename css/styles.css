@@ -1288,9 +1288,13 @@ a {
 
   .team-banner {
     padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .team-banner-info {
+    margin-top: 100px;
     margin-bottom: -100px;
   }
 }
@@ -1378,6 +1382,17 @@ a {
   }
   #testimonial-container {
     padding: 20px;
+  }
+  .team-banner {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team-banner-info {
+    margin-top: 100px;
+    margin-bottom: -100px;
   }
 }
 
