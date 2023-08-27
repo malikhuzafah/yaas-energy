@@ -840,6 +840,72 @@ a {
   display: none;
 }
 
+.contact-card-container,
+.contact-card-link-container {
+  margin-top: 10px;
+}
+
+.contact-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.contact-card-icon {
+  background-color: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card-info {
+  margin-top: 50px;
+}
+
+.contact-card-info-heading {
+  font-weight: bold;
+}
+
+.contact-card-info-text {
+  font-size: 0.9em;
+}
+
+.contact-card-link {
+  color: #1c2331;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+
+.contact-form {
+  margin-top: 100px;
+}
+
+.contact-form-head {
+  margin-bottom: 40px;
+}
+
+.contact-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-btn {
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.other-contact {
+  color: #1c2331;
+}
+
 /* contact page end */
 
 #navbar-toggle {
@@ -848,6 +914,11 @@ a {
 
 #navbar-toggle i {
   font-size: 30px;
+}
+
+.maps {
+  border: 0;
+  border-radius: 5px;
 }
 
 /* Project page start */
