@@ -1105,7 +1105,7 @@ a {
     width: 120px;
   }
   #navbar {
-    background-color: #1c2331;
+    /* background-color: #1c2331; */
     padding: 0 5%;
   }
   /* #navbarSupportedContent {
@@ -1258,7 +1258,7 @@ a {
     display: none;
   }
   #navbar {
-    background-color: #1c2331;
+    /* background-color: #1c2331; */
     padding: 0 5%;
   }
   #navbarSupportedContent .closebtn {
