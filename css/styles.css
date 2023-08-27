@@ -1001,6 +1001,7 @@ a {
 .modal-content {
   background-color: #1c2331;
   color: #fff;
+  /* background-color: #f4f4f4; */
 }
 
 .modal-title,
@@ -1019,7 +1020,7 @@ a {
   cursor: pointer;
 }
 .btn-close {
-  background-color: #313131;
+  background-color: #fff;
 }
 
 .info-btn {
@@ -1043,7 +1044,9 @@ a {
 }
 
 .blockquote-footer {
-  color: #c3073f;
+  /* color: #c3073f; */
+  /* color: #fff; */
+  color: #aaafb4;
 }
 
 .project-item-title {

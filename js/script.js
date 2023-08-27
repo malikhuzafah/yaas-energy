@@ -65,29 +65,29 @@ function openModal() {
   var demo = this.getAttribute("data-demo");
   var visit = this.getAttribute("data-visit");
   console.log(visit);
-  var buttons = $("#modal-buttons");
-  buttons.empty();
-  if (source != null) {
-    buttons.append(
-      '<a href="' +
-        source +
-        '" target="_blank"><span class="btn my-btn">Code <em class="fa-solid fa-up-right-from-square"></em></span></a>'
-    );
-  }
-  if (demo != null) {
-    buttons.append(
-      '<a href="' +
-        demo +
-        '" target="_blank"><span class="btn my-btn">Demo <em class="fa-solid fa-up-right-from-square"></em></span></a>'
-    );
-  }
-  if (visit != null) {
-    buttons.append(
-      '<a href="' +
-        visit +
-        '" target="_blank"><span class="btn my-btn">Visit <em class="fa-solid fa-up-right-from-square"></em></span></a>'
-    );
-  }
+  // var buttons = $("#modal-buttons");
+  // buttons.empty();
+  // if (source != null) {
+  //   buttons.append(
+  //     '<a href="' +
+  //       source +
+  //       '" target="_blank"><span class="btn my-btn">Code <em class="fa-solid fa-up-right-from-square"></em></span></a>'
+  //   );
+  // }
+  // if (demo != null) {
+  //   buttons.append(
+  //     '<a href="' +
+  //       demo +
+  //       '" target="_blank"><span class="btn my-btn">Demo <em class="fa-solid fa-up-right-from-square"></em></span></a>'
+  //   );
+  // }
+  // if (visit != null) {
+  //   buttons.append(
+  //     '<a href="' +
+  //       visit +
+  //       '" target="_blank"><span class="btn my-btn">Visit <em class="fa-solid fa-up-right-from-square"></em></span></a>'
+  //   );
+  // }
   var tools = this.getAttribute("data-tools");
   var toolsSplit = tools.split(" ");
   var modalTools = $("#modal-tools");
