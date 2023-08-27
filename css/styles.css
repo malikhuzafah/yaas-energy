@@ -737,6 +737,10 @@ a {
   font-size: 20px;
 }
 
+.faq-text {
+  font-size: 18px;
+}
+
 @keyframes revolve {
   0% {
     opacity: 0;
