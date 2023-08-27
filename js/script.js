@@ -326,7 +326,6 @@ function scrollFunction() {
         $(this).css("color", "#fff");
       }
     );
-
     // $("#navbarDropdown").css("color", "#fff");
     $("#navbar-btn button").removeClass("my-btn");
     $("#navbar-btn button").addClass("my-btn2");
@@ -341,8 +340,8 @@ function scrollFunction() {
         $(this).css("color", "#125468");
       }
     );
-    $(".active-link").css("color", "#fff");
     // $("#navbarDropdown").css("color", "#125468");
+    $(".active-link").css("color", "#fff");
     $("#navbar-btn button").addClass("my-btn");
     $("#navbar-btn button").removeClass("my-btn2");
     $("#navbar").css("padding", "2% 5%");
