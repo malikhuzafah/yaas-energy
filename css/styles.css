@@ -852,6 +852,19 @@ a {
   background-image: url("../images/main-1.jpg");
 }
 
+.team-banner {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 100px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
 /* Career Page end */
 
 /* partners page */
@@ -1271,6 +1284,14 @@ a {
     padding: 15px 0;
     font-size: 15px;
     font-weight: bold;
+  }
+
+  .team-banner {
+    padding: 100px 0;
+  }
+
+  .team-banner-info {
+    margin-bottom: -100px;
   }
 }
 
