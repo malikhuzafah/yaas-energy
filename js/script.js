@@ -144,17 +144,17 @@ function closeNav() {
 }
 
 function backNav() {
-  $("#navbarSupportedContent").css("width", "100%");
+  // $("#navbarSupportedContent").css("width", "100%");
   $("#navbarSupportedContent2").css("width", "0");
-  $("html, body").css({
-    overflow: "hidden",
-    height: "100%",
-  });
+  // $("html, body").css({
+  //   overflow: "hidden",
+  //   height: "100%",
+  // });
 }
 
 function openProjects() {
   $("#navbarSupportedContent2").css("width", "100%");
-  $("#navbarSupportedContent").css("width", "0");
+  // $("#navbarSupportedContent").css("width", "0");
   // $("#navbarSupportedContent").html(
   //   '<ul class="navbar-nav mx-auto mb-2 mb-lg-0"><li class="nav-item"><a class="nav-link nav-close" id="about-link" href="#"><span>Residents</span></a></li><li class="nav-item"><a class="nav-link nav-close" id="portfolio-link" href="./faqs.html"><span>FAQ\'s</span></a></li><li class="nav-item"><a class="nav-link nav-close" id="education-link" href="./career.html"><span>Career</span></a></li><li class="nav-item"><a class="nav-link nav-close" id="skills-link" href="./partners.html"><span>Partners</span></a></li></ul>'
   // );

@@ -49,6 +49,7 @@ a {
 
 #navbarSupportedContent2 {
   display: none;
+  z-index: 10000000;
 }
 
 .nav-link span {
@@ -1091,6 +1092,7 @@ a {
 @media only screen and (max-width: 767px) {
   #navbarSupportedContent2 {
     display: block;
+    z-index: 10000000;
   }
   #smallProj {
     display: block;
@@ -1116,16 +1118,20 @@ a {
     top: 25px;
     left: 50px;
     font-size: 36px;
-    z-index: 1001;
+    z-index: 1000001;
     color: #ecf0f3;
     display: none;
   }
+
+  #navbarSupportedContent {
+    z-index: 1000;
+  }
+
   #navbarSupportedContent,
   #navbarSupportedContent2 {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1000;
     top: 0;
     left: 0;
     background-color: #1c2331;
@@ -1308,6 +1314,7 @@ a {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   #navbarSupportedContent2 {
     display: block;
+    z-index: 10000000;
   }
   #smallProj {
     display: block;
@@ -1335,12 +1342,16 @@ a {
     z-index: 1001;
     color: #ecf0f3;
   }
+
+  #navbarSupportedContent {
+    z-index: 1000;
+  }
+
   #navbarSupportedContent,
   #navbarSupportedContent2 {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1000;
     top: 0;
     left: 0;
     background-color: #1c2331;
