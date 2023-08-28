@@ -64,7 +64,8 @@ a {
 
 .nav-link {
   border-radius: 5px;
-  color: #1c2331;
+  /* color: #1c2331; */
+  color: #125487;
 }
 .nav-link:hover {
   background-color: #125487;
@@ -1310,7 +1311,7 @@ a {
   }
 
   .team-banner {
-    padding: 100px 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1412,7 +1413,7 @@ a {
     padding: 20px;
   }
   .team-banner {
-    padding: 100px 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1498,4 +1499,9 @@ a {
 .active-link {
   background-color: #125487;
   color: #fff;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid #1c2331;
 }
