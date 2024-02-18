@@ -620,6 +620,18 @@ a {
   background-image: url("../images/main-1.jpg");
 }
 
+/* #team-abdullah {
+  background-image: url("../images/team-abdullah.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#team-abdullah:hover {
+  background-size: 110%;
+  transition: 1s ease;
+} */
+
 #vision {
   background-color: #125487;
 }
@@ -681,9 +693,10 @@ a {
   border-radius: 50%;
 }
 .team-img:hover {
-  opacity: 100%;
-  opacity: 0.8;
+  /* opacity: 100%;
+  opacity: 0.8; */
   transition: 0.9s;
+  transform: scale(1.1);
 }
 
 #our-team {
@@ -1001,6 +1014,10 @@ a {
 /* Project page start */
 
 .modal {
+  background-image: url("../images/main-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   backdrop-filter: blur(5px);
 }
 

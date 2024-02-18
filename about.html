@@ -8,6 +8,8 @@
     <meta name="theme-color" content="#125487">
     <meta name="apple-mobile-web-app-status-bar-style" content="#125487">
 
+    <link rel="icon" href="./images/logo-02.png">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -136,285 +138,320 @@
                 </div>
             </nav>
         </header>
-        <div class="w-100">
+        <!-- <div class="w-100">
             <div class="img-fluid head-img" id="about-head-img">
                 <div class="container">
                     <span class="h1">About</span>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
-    <div class="container" style="margin-top: 100px; padding-top: 100px; padding-bottom: 100px;">
-        <div class="text-center" style="padding: 0 25%; margin-bottom: 50px;">
-            <span class="h2">About us</span><br>
-            <span class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ipsa deleniti, est
-                quo suscipit excepturi recusandae nihil nisi.</span>
-
+    <div class="container" id="faqs-content">
+        <div class="container text-center" id="faqs-head">
+            <!-- <span class="text-muted faq-text">FAQ's</span><br> -->
+            <span class="h2 fw-bold">About Us</span><br>
+            <span class="text-muted faq-text">Your trusted partner for a brighter, cleaner future.</span>
         </div>
-        <div class="row" style="margin:0">
-            <div class="col-sm-12 col-md-12 col-lg-5"
-                style="background-image: url('./images/conversation_business_03.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 10px; border: 1px solid rgba(0, 0, 0, 0.1);">
+        <div class="container" style="margin-top: 100px; padding-top: 100px; padding-bottom: 100px;">
+            <!-- <div class="text-center" style="padding: 0 25%; margin-bottom: 50px;">
+                <span class="h2">About us</span><br>
+                <span class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ipsa deleniti,
+                    est
+                    quo suscipit excepturi recusandae nihil nisi.</span>
 
-                <!-- <img src="./images/main-3.jpg" alt="" class="img-fluid" style="border-radius: 10px;"> -->
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-7" style="padding-left: 50px;">
-                <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ullam quos voluptas suscipit
-                    consectetur labore hic. Sit impedit rem, facilis in facere quam nemo reiciendis magnam distinctio
-                    tempore id dolor.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consequatur libero officia labore,
-                    consectetur corporis quod hic ea maiores ratione recusandae numquam placeat quam omnis quisquam
-                    repudiandae est earum incidunt?
-                    <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ullam quos voluptas suscipit
-                    consectetur labore hic. Sit impedit rem, facilis in facere quam nemo reiciendis magnam distinctio
-                    tempore id dolor.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consequatur libero officia labore,
-                    consectetur corporis quod hic ea maiores ratione recusandae numquam placeat quam omnis quisquam
-                    repudiandae est earum incidunt?
-                </span><br>
-                <a href="./contact.html" class="btn my-btn5" style="margin-top: 10px;">Get in touch</a>
-            </div>
-        </div>
-    </div>
+            </div> -->
+            <div class="row" style="margin:0">
+                <div class="col-sm-12 col-md-12 col-lg-5"
+                    style="background-image: url('./images/aboutus.JPG'); background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 10px; border: 1px solid rgba(0, 0, 0, 0.1); min-height: 300px;">
 
-    <div class="container" style="margin-top: 100px; padding-top: 100px; padding-bottom: 100px;">
-        <div class="text-center" style="padding: 0 25%; margin-bottom: 70px;">
-            <span class="h2">Why us</span><br>
-            <span class="text-muted">Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit.
-                Itaque ipsa deleniti, est
-                quo suscipit excepturi recusandae nihil nisi, quam..</span>
-
-        </div>
-        <div class="row" style="margin:0">
-            <div class="col-xs-12 col-md-6 col-lg-4 contact-card-container" style="margin-bottom: 50px;">
-                <div class="contact-card">
-                    <div class="contact-card-icon" style="margin-top: -45px;">
-                        <img class="img-fluid" style="width: 30px; height: 30px;"
-                            src="data:image/png;base64,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">
-                        <!-- <i class=" fa-regular fa-comments"></i> -->
-                    </div>
-                    <div class="contact-card-info">
-                        <span class="contact-card-info-heading">Expertise and experience</span><br>
-                        <span class="text-muted contact-card-info-text">We are experts in solar energy with a proven
-                            track record of success.</span>
-                    </div>
-                    <!-- <div class="contact-card-link-container">
-                        <a class="contact-card-link" href="#">
-                            <span>info@yaasenergy.pk</span>
-                        </a>
-                    </div> -->
+                    <!-- <img src="./images/main-3.jpg" alt="" class="img-fluid" style="border-radius: 10px;"> -->
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-7" style="padding-left: 50px;">
+                    <span>
+                        YAAS Energy pvt. ltd. is a specialist solar company based in Pakistan. With an
+                        extensive
+                        experience, we're installing and maintaining solar systems in Residential, commercial,
+                        Industrial as well as in Agricultural fields. We pride ourselves on offering quality
+                        services and pay keen attention to details. By choosing YAAS as your energy supplier,
+                        you
+                        can enjoy price security when you lock in long term saving.
+                    </span><br>
+                    <a href="./contact.html" class="btn my-btn5" style="margin-top: 10px;">Get in touch</a>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-4 contact-card-container" style="margin-bottom: 50px;">
-                <div class="contact-card">
-                    <div class="contact-card-icon" style="margin-top: -45px;">
-                        <img class="img-fluid" style="width: 30px; height: 30px;"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAIHUlEQVR4nO1be3AURRofTj3L86yr83E+yjvrPLUsH2V5npZ3erVlumez2z27Zre7SXj4QCWndSWIkE0gxCBQGLV4pNQSMRBCoiBRUVEBPe5Q7upEL+DxiBTsIopgAmQTYRMBYdvqTWa2k2w2M7vZzVjsV/X9M9Nfb3+/+Z7dvYqSoxzlKEc5ylGOcmRTAu7CawAieyCmIYj9VyunG0FMpkFMuWCA6VTldCOAyYw4AGTGYOMZYz93uVxnK3YmFZGxENPNeZgGhhIA1cN+DzA9ABDtVDXiVOxKANMDPUpFVbf/jmRjIWL36AAI4JLOi8ibBliILFDsShCRRn2hENGmysrKnw00VrwTigtONg5qzCEpfwq6yZ8Uu9JdrsI/AEyPGV92ECswQxCTmjiopE6xOwFEp/f4dRh6iy5Lez430SAm30NMdubn+y5VfgoENN+tQ6G8Tj3Rf8RQzZej4SKosTshInMAph9BTPdBRLoAJhGA6BcQ03+KdAhc5GbFrgQ1AkQashKJRYQHmNwnfNgIZoMwwKRZxcxnJfjGMhAiLQCTB5RMkKZpvxCFiJGOEKkbzM+dHnYVRGSTWcX7MSIbocZ+l+QnRsSsRso8Iv0qmSBRikqFjs57b7ml+KxE4wFiLohJR58v2wYwfR5i5l350iOOruaSL7uaA5HQx5P2rK5/+JPi4tEb1X4ytHWgdCqe91nPDxCT8RkBwChJpapMpCdVHXtuP+WxH3anLr2AoZ0iPd7O2Dn6GL4nMIWHSnlfPrJtSse0Kfdu6CWP6bFEIDjvLvwtRLS9Zy0f5LnYdUo2CGrMIb5knpupif2RHpGU3wXd7Ma+43io7BoeKg0mAkHw5rUTtjsxaZEt4S7kv6LfWrxFl+VhdptiB2KMnQEw/USykOBgcYJ/O/lcvjtwPQ+VTuKhwA4ZhAObHt+vatQAASL6sWJngoiM6uUe2HeDFXnO2Rk8GJjAQ6UndBCa3nt0mxzk8jR/gWJXAohui38tVp7qPDwUUGUQyiaP3SABu0OxKY3QAxLA5OBfvN7z0pmMB0snGoFxa0m7nB2c2HeTYttCCZPaoegC+b8qz+TB0mYdBJEipVhQqZwOxEOBx3UA3ql75L9SPbHe0kQQsl9178CQUrtyHmIPAuy/shcAwak36ACIYkmKAztNK5+HyV9FDk25HM0uRyGiqxwu3+UxAL4oOU8HoLO5JCKVyEdNKY/x6F9DRA/bQDFrrLFv9bMCHgqEBACRHSWGBYi0aAoAgFmxLsTGPMhfWryMv1zbYDsW6yqrmM1VjcV7AES3iT6DB0uuFkVSzYJiEH9H9psCACIyRxda2rCC250+a9rCsW+01A2yewxX1nx/tBwEgWQBgfKZlhfUFm7ny1eu4lu3N2dNdmn9CtkdPpS7UYjp+921BvOaAiA/33dprHcXxYNnJG9v77C0mPIZc2ILcReM4ofbwlmRbWsLG64AEDmpqr7fmFJ2YCug/9YRfXfNh5aUmFbZrYTgN99+L2uyj5VMl/YDWHFaAEDMJqbqBgIwXXbilPKsyQrAErlBSpSfhht0fHeE53sLYwsRZtl68FBWZEX8UD0j7eEGpdNnGV/j9VWrsyY7fuJUyQrS3OaCabjB+2v/YSxkwuRpWZOdt6RRBuCDYXODo0cj3HV3kWHKLa0HMy77w6koX9MUNNxAbHYOqxuUVcw2vkajRVNORbaj6wTfuPsgf2CCXdxg3XpjIY9adYMUZPeFO2MAzM2UG6gexsPhduMHd+7azVc0rhqQ6xpe404PM0y5ZmlD0vHpylYvXs6rFjbwmQtq4v0BYic9nqKL0wIBILJLR3Ru9Ysx5SORTo79Y4a/AzTDbro4TQDo5/pk859bGAOgs7OLa+QnAgAmW1NW3uFwnCkfVX2975teLiCakGQt66Il9Xz6k0/xiplVlttdK7Kzq2t45bxFBk+tel7sD+gAnAAFBRek9vU19mddeZe3sJXbkA5HjsWCX18e/1i57AYPpQYAJhX6JGLnlnNuvcfNYIscjXK++atwQgDmL33DAAAgui5FAOhHcQDoGM659Q2CDLbIeupLxOu27OFOT6FRFLlc7CJLyjsY+yVA5HjPBFEHYpdwzm9MBYBMtMhdx0/y/wQPDQiA4Icmxd1A7CBbAgBiPzJ8CNH/689TcYOhbpFPnorypq/akiofc4O6Xm6w1iIAdF4cADJXAmCWVQCGskVuaT3Et+/vGFT5RG7g0EZdaAEAstUwHzdx68+rnl0wTgSlsMWtsqFqkV+oazSlvJENJDcwfRcoz1N0cezAoXtz4biIB+K5CCT6sbNY1HC0yOP+XmIJANkNICZrTAEAMB0T9x2ywXheUHCB2G3RzdFKRE+nRW493MHzvXHZ1Zt2mgagtxuQE04nO98EAKRWMpuKPu/W6+9EJZjJNvdUNMr3tkVi0f5vk58wZJ95ebklKyieFN8wFRcyBgcAka8NAZfv9j7Wca/+ThxIfPq/LUPe5ooCp+W77/lne+ORvrr+LUP2fotuMKt6iQQAK0uqvFPzXyv5TIfoB+T34uhJvtUhTFLEgyXLXh20ZV32imhzR8bb3NrebW79ijf4wrqV/NlFr8RaW5lnP1dr7PYI2cr5i/qNScRC+YKicfF6ANOipABAjTwsdVNvDfjnpf73/+zPiHwjLm8mBUBF7H7J/+8baJw4jhbH0nq2sDvH/j6j+W5VTNCI2MUINxtt5rq5uKAg8itE7AmAaZUZhpiuBoi8AzX2tFmZ1GXJDBH4zNw/+hFzZLSZPKxnTAAAAABJRU5ErkJggg==">
-                    </div>
-                    <div class="contact-card-info">
-                        <span class="contact-card-info-heading">Quality products and workmanship</span><br>
-                        <span class="text-muted contact-card-info-text">We use high-quality solar panels and components
-                            and have a good track record of workmanship.</span>
-                    </div>
-                    <!-- <div class="contact-card-link-container">
-                        <a class="contact-card-link" href="#">
-                            <span>info@yaasenergy.pk</span>
-                        </a>
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4 contact-card-container" style="margin-bottom: 50px;">
-                <div class="contact-card">
-                    <div class="contact-card-icon" style="margin-top: -45px;">
-                        <img class="img-fluid" style="width: 30px; height: 30px;"
-                            src="data:image/png;base64,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">
-                    </div>
-                    <div class="contact-card-info">
-                        <span class="contact-card-info-heading">Excellent customer service</span><br>
-                        <span class="text-muted contact-card-info-text">We provide excellent customer service before,
-                            during, and after the installation of your solar system.</span>
-                    </div>
-                    <!-- <div class="contact-card-link-container">
-                        <a class="contact-card-link" href="#">
-                            <span>info@yaasenergy.pk</span>
-                        </a>
-                    </div> -->
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-4 contact-card-container" style="margin-bottom: 50px;">
-                <div class="contact-card">
-                    <div class="contact-card-icon" style="margin-top: -45px;">
-                        <img class="img-fluid" style="width: 30px; height: 30px;"
-                            src="data:image/png;base64,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">
-                        <!-- <i class=" fa-regular fa-comments"></i> -->
-                    </div>
-                    <div class="contact-card-info">
-                        <span class="contact-card-info-heading">Expertise and experience</span><br>
-                        <span class="text-muted contact-card-info-text">We are experts in solar energy with a proven
-                            track record of success.</span>
-                    </div>
-                    <!-- <div class="contact-card-link-container">
-                        <a class="contact-card-link" href="#">
-                            <span>info@yaasenergy.pk</span>
-                        </a>
-                    </div> -->
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-4 contact-card-container" style="margin-bottom: 50px;">
-                <div class="contact-card">
-                    <div class="contact-card-icon" style="margin-top: -45px;">
-                        <img class="img-fluid" style="width: 30px; height: 30px;"
-                            src="data:image/png;base64,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">
-                    </div>
-                    <div class="contact-card-info">
-                        <span class="contact-card-info-heading">Quality products and workmanship</span><br>
-                        <span class="text-muted contact-card-info-text">We use high-quality solar panels and components
-                            and have a good track record of workmanship.</span>
-                    </div>
-                    <!-- <div class="contact-card-link-container">
-                        <a class="contact-card-link" href="#">
-                            <span>info@yaasenergy.pk</span>
-                        </a>
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4 contact-card-container" style="margin-bottom: 50px;">
-                <div class="contact-card">
-                    <div class="contact-card-icon" style="margin-top: -45px;">
-                        <img class="img-fluid" style="width: 30px; height: 30px;"
-                            src="data:image/png;base64,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">
-                    </div>
-                    <div class="contact-card-info">
-                        <span class="contact-card-info-heading">Excellent customer service</span><br>
-                        <span class="text-muted contact-card-info-text">We provide excellent customer service before,
-                            during, and after the installation of your solar system.</span>
-                    </div>
-                    <!-- <div class="contact-card-link-container">
-                        <a class="contact-card-link" href="#">
-                            <span>info@yaasenergy.pk</span>
-                        </a>
-                    </div> -->
-                </div>
-            </div>
-
         </div>
 
+        <div class="container" style="margin-top: 100px; padding-top: 100px; padding-bottom: 100px;">
+            <div class="text-center" style="padding: 0 25%; margin-bottom: 70px;">
+                <span class="h2">Why us?</span><br>
+                <span class="text-muted">Experience the power of solar, with your needs at heart.</span>
 
-    </div>
-    <div id="about">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <p class="title h1 text-center"><strong>About Us.</strong></p>
+            </div>
+            <div class="row" style="margin:0">
+                <div class="col-xs-12 col-md-6 col-lg-4 contact-card-container" style="margin-bottom: 50px;">
+                    <div class="contact-card">
+                        <div class="contact-card-icon" style="margin-top: -45px;">
+                            <img class="img-fluid" style="width: 30px; height: 30px;"
+                                src="data:image/png;base64,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">
+                            <!-- <i class=" fa-regular fa-comments"></i> -->
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-info-heading">Expertise and experience</span><br>
+                            <span class="text-muted contact-card-info-text">We are experts in solar energy with a proven
+                                track record of success.</span>
+                        </div>
+                        <!-- <div class="contact-card-link-container">
+                            <a class="contact-card-link" href="#">
+                                <span>info@yaasenergy.pk</span>
+                            </a>
+                        </div> -->
+                    </div>
                 </div>
-                <dic class="col-12">
-                    <div class="container" id="about-container">
-                        <p id="about-bio">
-                            YAAS Group of Engineers is a specialist solar company based in Pakistan. With an extensive
-                            experience, we're installing and maintaining solar systems in Residential, commercial,
-                            Industrial as well as in Agricultural fields. We pride ourselves on offering quality
-                            services and pay keen attention to details. By choosing YAAS as your energy supplier, you
-                            can enjoy price security when you lock in long term saving.
-                        </p>
-                        <div class="container">
-                            <a href="#" class="btn my-btn2"><span>Learn More</span></a>
+                <div class="col-xs-12 col-md-6 col-lg-4 contact-card-container" style="margin-bottom: 50px;">
+                    <div class="contact-card">
+                        <div class="contact-card-icon" style="margin-top: -45px;">
+                            <img class="img-fluid" style="width: 30px; height: 30px;"
+                                src="data:image/png;base64,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">
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-info-heading">Quality products and workmanship</span><br>
+                            <span class="text-muted contact-card-info-text">We use high-quality solar panels and
+                                components
+                                and have a good track record of workmanship.</span>
+                        </div>
+                        <!-- <div class="contact-card-link-container">
+                            <a class="contact-card-link" href="#">
+                                <span>info@yaasenergy.pk</span>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-6 col-lg-4 contact-card-container" style="margin-bottom: 50px;">
+                    <div class="contact-card">
+                        <div class="contact-card-icon" style="margin-top: -45px;">
+                            <img class="img-fluid" style="width: 30px; height: 30px;"
+                                src="data:image/png;base64,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">
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-info-heading">Excellent customer service</span><br>
+                            <span class="text-muted contact-card-info-text">We provide excellent customer service
+                                before,
+                                during, and after the installation of your solar system.</span>
+                        </div>
+                        <!-- <div class="contact-card-link-container">
+                            <a class="contact-card-link" href="#">
+                                <span>info@yaasenergy.pk</span>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4 contact-card-container" style="margin-bottom: 50px;">
+                    <div class="contact-card">
+                        <div class="contact-card-icon" style="margin-top: -45px;">
+                            <img class="img-fluid" style="width: 30px; height: 30px;"
+                                src="data:image/png;base64,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">
+                            <!-- <i class=" fa-regular fa-comments"></i> -->
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-info-heading">Seamless Project Management</span><br>
+                            <span class="text-muted contact-card-info-text">Sit back and relax while we take care of the
+                                details, making your switch to solar a smooth transition.</span>
+                        </div>
+                        <!-- <div class="contact-card-link-container">
+                            <a class="contact-card-link" href="#">
+                                <span>info@yaasenergy.pk</span>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4 contact-card-container" style="margin-bottom: 50px;">
+                    <div class="contact-card">
+                        <div class="contact-card-icon" style="margin-top: -45px;">
+                            <img class="img-fluid" style="width: 30px; height: 30px;"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC10lEQVR4nO2Yz2sTQRTHB5Wo4NFk3oSEWA0KOXj1B828JBXqwYNok3rsRawErwEttN6iIHQXVEz/gdYNXvQsePFUb8Wb4o+qKIrYnmxtfDIbNt2Ubetmk60j+cJjYGBmvp95MzvsY6yvvnZWAINRLvABB7kIQq6BQPIXco0DvucCa5xnB0I1z3m2AAK/+De9aSzH4ngmFPNC4EEQ8nMXzZMKDvIr56diXbJZ3A2QvcIFvgSBqyCwAUI+Uf3q2LQWFfItQA5Vvxq10dR2awiBgyDkG9d89wNbT6fP7gWBT712KR4fPKrObavPNr8ufwBNcS7z61nAdyyoAOSkh/kGAD5mjO1yX1hn54MAMJVt18UODiDw9XpK8Xomk4lsZtJjbAcAbMs5fYuD/OlMFo3iAT+L/RMAIOQrZ7KYkDf0y4DAmxuM/O72JxO2+pwK+YILWWEM93QEkErhPgB8HqZp8AZ51jFEInFyP4CcAsDlsDMA7RAVppMymUwEQE64AOaZbko3H1LnYVthOgqCfJVisQLnHMdU6+4naypCdfM2WeYnqpvUywAXAFnTx3zSy4XmYLnQDmDc6rVx8gKoG99p9k4ycPqobnzcGQBThdUFgHDMkyeAsaQ5gPn3l7kPUN9+hxdrVSriCB1OFaiUK9KHmapeGSjiSJvJ0VxRL4Ajh4baTKYHhvQCKOWKemdgsVa1TatMjOZL+t0B2ibi8Zy9vmq1BBgbvmSvr1otARqWYR8z1WoJQB7RB6AQd3umfI1OHz9nt1pmIJUs2OurVksACPIOqB9pZ7C7KheW+ZXZ6Zb5ZCLfAYCQ860dADnhQIRhfnVumozLV1sAwyfOdwRQCbN4BVvE3fGyfwBVzlNlvZ02f0FepF9zzkNm/PAB0IKoqOPkvhO9jmQibx+be+Nll3mTyDIesqAKs6xC7rCMb/TITHQBYCrShAirvGIsqZ3vivm++voP9QcAAD4g2VYRewAAAABJRU5ErkJggg==">
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-info-heading">Affordable & accessible</span><br>
+                            <span class="text-muted contact-card-info-text">Harness the sun's power without breaking the
+                                bank, with flexible financing options to fit your needs.</span>
+                        </div>
+                        <!-- <div class="contact-card-link-container">
+                            <a class="contact-card-link" href="#">
+                                <span>info@yaasenergy.pk</span>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-6 col-lg-4 contact-card-container" style="margin-bottom: 50px;">
+                    <div class="contact-card">
+                        <div class="contact-card-icon" style="margin-top: -45px;">
+                            <img class="img-fluid" style="width: 30px; height: 30px;"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFYElEQVR4nO1ZW2xURRg+EIUQL9GS7szsLn2AorJYWqwiIMyUgrQSlF5oixK0VWxMEUg0vVhslzORxsQWS0wgPmANGhANMSb4QFXwFlToE20hSttzWiOk8tBAV0R6+c2cvZ3t7pY9Z2996Jf86cnp/HO+b/5/Zv6ZlaRpTGMahuFwOGYh6+oyjOkxhNnvmFAXwuwmJlTBhB1HVrYlPT1/drAnuwsRWoMI7UCY/YcJg0hMtNV8CK0RfUjRAGO2GRPWF8FH+wlhBXrymNAzkZLG4fol9HuzImYiQt8z9kE6SshTacIZEVobLXnsF1FjmD0irHlCR4MY0z1WK8tC6Ol77PblcywWmmEhtB4TetUThZsIrbB4BHR4fUUbkYZShBBtxbd0As6bSRs9+c/nzl15X7j24n8Ys20W26olvgHQ5bwR8l6IOaWfE5Ih9YT16tR/IUnSDMkg9ANg1DeqPrTVRpc24UYeBngGKPwAKHIXKLLLY+K5FQacjyZNAMb0qM8Rs7eDiP9xYDao8kFQ+BioHEKaIo8mLwJYrPOeyafLaT95fjoscZ0lLwKEDnudUlPZvQECVH4oEvJTUgC4c37MjADo54uTkkKptjWZPgFiwkZIPkiAKu9P2DKKw0xiUHi3aQEK7zRC3hHNRoYQLfU7sr9TUpbd7xEwHEUEbog+0tJWPYgJbUOY/osxbdINWhMmdCQmpUTwRsZOiLpIkDAvgF9HVvosJuyKrm5y+QQQ6pqkvjpjuJjDmBYFjgA7MdTZcMmsgJe3bB4KIobZu+Ei4CmnzyPEqk2X0xMr0fnzc2/ub6yAzvZqcF10wvDFRu25dW8FvLatFH776o0AAfPmrQlXXV4R0ZASAEPl9OoVGwIEFG7YFCqXj4h5ICUShNBCTGjPnQRs31oSIKDnxzpNlCcFuxM16pMsa6zEass5mr00z7VgQS4IEwSrXiqDk2074XbP3lA10Tcl+SWp0lQCdDlngcI/EAXbZMWctvF1fHi3NFUB/Xyx2GHFJqXtEW7rBJW3gOp0JJvfNBIEFnRvgzC9pd+6MWaHMWFjkS6ncb/nieTeRtzxiBaiDoqGeKzveQIQ7t4mHhGIqjgLh2jubYwi6nueUIj23iZhB5Rw0KeFqHvEOwDnTFDkOlC5YqTyjMRGe2VfCtnsOeKdAv28VnxTMgOE6TVvh3Z7rk0ToPLqWBP32p+/1vsEZC1Zr9u1+ZumBGBMv/V2SAit1AQovDdeAj5qftUnoGxToV7AZXMRIGynftm025engCKPx4P80IUGyMxY7xNwpLVSXzeNmxLgXuPdt8puo7/c6G4YiTX5612N8Fy+/2zwWGYe/HPJqWsj3zYlQIsCYhv1R7nspXkjZ78MPFlFY6KvlU884yNvteVA+6e7JrSTB0wL0ERYWQUmbFy/0Ygc/e7YbhjpkQ2TFj6nP9sNLxQVAbHm+PoUz4ebdanjT6HjUrTAOKdYvyp57aGFa7WT1qGmVzRSvT/Vafkc8vCicmhrqQTHonVBO+/C9LXw9cevhxbdJ+dJsYDFkosQoZ/YbIHRCGfLsvOh7+e3fETGFRnS0gIP8mK931FRBlc79oQmr/CTUqxRVlCwqKbq+UFB8E4iDu7bHkCovLTYPZey8oBXvwj9Z/0CQ6TOBVCcD0jxAPTuQ6DKpy7/UKet37U7tkLxxgJ48vF8eOThddqVycQIeKPw17l67e/kc0U+BT1O7be0uAEAZoAq7wKVD8ZwWR3U+gQw/JOVeSEDLXNAkatA4edMbXTCx+1bJfpKGPGQYtR3CCi8HFT+Pii8XZQBoPBroMq3NBPP7nftnjblwieppKUphv8BiW7ALxhV4YQAAAAASUVORK5CYII=">
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-info-heading">Empowering Information</span><br>
+                            <span class="text-muted contact-card-info-text">Gain valuable knowledge and transparent
+                                pricing to make informed decisions about your solar journey.</span>
+                        </div>
+                        <!-- <div class="contact-card-link-container">
+                            <a class="contact-card-link" href="#">
+                                <span>info@yaasenergy.pk</span>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- <div id="about">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <p class="title h1 text-center"><strong>About Us.</strong></p>
+                    </div>
+                    <dic class="col-12">
+                        <div class="container" id="about-container">
+                            <p id="about-bio">
+                                YAAS Group of Engineers is a specialist solar company based in Pakistan. With an
+                                extensive
+                                experience, we're installing and maintaining solar systems in Residential, commercial,
+                                Industrial as well as in Agricultural fields. We pride ourselves on offering quality
+                                services and pay keen attention to details. By choosing YAAS as your energy supplier,
+                                you
+                                can enjoy price security when you lock in long term saving.
+                            </p>
+                            <div class="container">
+                                <a href="#" class="btn my-btn2"><span>Learn More</span></a>
+                            </div>
+                        </div>
+                    </dic>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="container" style="margin-top: 100px; margin-bottom: 250px;">
+            <div class="row" style="margin:0">
+
+                <div class="col-sm-12 col-md-12 col-lg-7"
+                    style="padding-left: 50px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <span class="h3"><strong>Our Vision</strong></span>
+                    <span>
+                        We are hitting the market ground with a mission to make that future a reality, today.
+                        And we
+                        are focused on taking the necessary steps to get there. We believe in a future where
+                        clean
+                        energy is accessible to everyone, everywhere. Get affordable pricing and contribute to a
+                        cleaner environment with us!
+                    </span><br>
+                    <div> <a href="./contact.html" class="btn my-btn5" style="margin-top: 10px;">Get in touch</a></div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-5"
+                    style="background-image: url('./images/vision.JPG'); background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 10px; border: 1px solid rgba(0, 0, 0, 0.1); min-height: 300px;">
+
+                    <!-- <img src="./images/main-3.jpg" alt="" class="img-fluid" style="border-radius: 10px;"> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="vision">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <p class="title2 h1 text-center"><strong>Our Vision.</strong></p>
+                    </div>
+                    <dic class="col-12">
+                        <div class="container" id="vision-container">
+                            <p id="vision-bio">
+                                We are hitting the market ground with a mission to make that future a reality, today.
+                                And we
+                                are focused on taking the necessary steps to get there. We believe in a future where
+                                clean
+                                energy is accessible to everyone, everywhere. Get affordable pricing and contribute to a
+                                cleaner environment with us!
+                            </p>
+                        </div>
+                    </dic>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div id="about">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <p class="title h1 text-center"><strong>Why Us?</strong></p>
+                    </div>
+                    <dic class="col-12">
+                        <div class="container" id="about-container">
+                            <p id="about-bio">
+                                We are dedicated to providing adequately sized, professionally designed and installed
+                                solar
+                                power systems. All our personnel, design and installation teams comprise of enthusiastic
+                                people who share a common goal, of using solar energy for a brighter future. All our
+                                photovoltaic electric systems are designed and installed by highly qualified engineers,
+                                Installers and personnel.
+                            </p>
+                            <div class="container">
+                                <a href="#" class="my-btn2 btn"><span>Learn More</span></a>
+                            </div>
+                        </div>
+                    </dic>
+                </div>
+            </div>
+        </div> -->
+
+        <div id="our-team">
+            <div class="container">
+                <h1 align="center" class="title h1 text-center"><strong>Our Team.</strong></h1>
+                <div class="row w-100" id="team-container">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div align="center" class="container">
+                            <img src="images/team-abdullah.jpeg" class="team-img img-fluid" width="970" height="970"
+                                alt="Abdullah">
+                        </div>
+                        <div align="center" class="container team-info">
+                            <span>Electrical Eng.</span><br>
+                            <p class="h4"><strong>Malik Abdullah Khan</strong></span>
+                            <p class="blockquote-footer">Operation Manager</p>
                         </div>
                     </div>
-                </dic>
-            </div>
-        </div>
-    </div>
-    <div id="vision">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <p class="title2 h1 text-center"><strong>Our Vision.</strong></p>
-                </div>
-                <dic class="col-12">
-                    <div class="container" id="vision-container">
-                        <p id="vision-bio">
-                            We are hitting the market ground with a mission to make that future a reality, today. And we
-                            are focused on taking the necessary steps to get there. We believe in a future where clean
-                            energy is accessible to everyone, everywhere. Get affordable pricing and contribute to a
-                            cleaner environment with us!
-                        </p>
-                    </div>
-                </dic>
-            </div>
-        </div>
-    </div>
-    <div id="about">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <p class="title h1 text-center"><strong>Why Us?</strong></p>
-                </div>
-                <dic class="col-12">
-                    <div class="container" id="about-container">
-                        <p id="about-bio">
-                            We are dedicated to providing adequately sized, professionally designed and installed solar
-                            power systems. All our personnel, design and installation teams comprise of enthusiastic
-                            people who share a common goal, of using solar energy for a brighter future. All our
-                            photovoltaic electric systems are designed and installed by highly qualified engineers,
-                            Installers and personnel.
-                        </p>
-                        <div class="container">
-                            <a href="#" class="my-btn2 btn"><span>Learn More</span></a>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div align="center" class="container">
+                            <img src="images/team-shahid.jpeg" class="team-img img-fluid" width="970" height="970"
+                                alt="Shahid">
+                        </div>
+                        <div align="center" class="container">
+                            <span>Electrical Eng.</span><br>
+                            <p class="h4"><strong>Shahid Mahmood</strong></p>
+                            <p class="blockquote-footer">Sr. Technical Eng.</p>
                         </div>
                     </div>
-                </dic>
-            </div>
-        </div>
-    </div>
-
-    <div id="our-team">
-        <div class="container">
-            <h1 align="center" class="title h1 text-center"><strong>Our Team.</strong></h1>
-            <div class="row w-100" id="team-container">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div align="center" class="container">
-                        <img src="images/team-abdullah.jpg" class="team-img img-fluid" width="970" height="970"
-                            alt="Abdullah">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div align="center" class="container">
+                            <!-- <div class="team-img img-fluid" style="aspect-ratio: 1/1;" id="team-abdullah">
+                            </div> -->
+                            <img src="images/team-ahmad.jpeg" class="team-img img-fluid" width="970" height="970"
+                                alt="Ahmad">
+                        </div>
+                        <div align="center" class="container">
+                            <span>Electrical Eng.</span><br>
+                            <p class="h4"><strong>Muhammad Ahmad Wahla</strong></p>
+                            <p class="blockquote-footer">Project Manager</p>
+                        </div>
                     </div>
-                    <div align="center" class="container team-info">
-                        <span>Electrical Eng.</span><br>
-                        <p class="h4"><strong>Malik Abdullah Khan</strong></span>
-                        <p class="blockquote-footer">Operation Manager</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div align="center" class="container">
-                        <img src="images/team-1.jpg" class="team-img img-fluid" width="970" height="970" alt="Shahid">
-                    </div>
-                    <div align="center" class="container">
-                        <span>Electrical Eng.</span><br>
-                        <p class="h4"><strong>Shahid Mahmood</strong></p>
-                        <p class="blockquote-footer">Sr. Technical Eng.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div align="center" class="container">
-                        <img src="images/team-ahmad.jpg" class="team-img img-fluid" width="970" height="970"
-                            alt="Ahmad">
-                    </div>
-                    <div align="center" class="container">
-                        <span>Electrical Eng.</span><br>
-                        <p class="h4"><strong>Muhammad Ahmad Wahla</strong></p>
-                        <p class="blockquote-footer">Project Manager</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div align="center" class="container">
-                        <img src="images/team-yousaf.jpg" class="team-img img-fluid" width="970" height="970"
-                            alt="Yousaf">
-                    </div>
-                    <div align="center" class="container">
-                        <span>Electrical Eng.</span><br>
-                        <p class="h4"><strong>Yousaf Mahfooz Bajwa</strong></p>
-                        <p class="blockquote-footer">General Manager</p>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div align="center" class="container">
+                            <img src="images/team-yousaf.jpeg" class="team-img img-fluid" width="970" height="970"
+                                alt="Yousaf">
+                        </div>
+                        <div align="center" class="container">
+                            <span>Electrical Eng.</span><br>
+                            <p class="h4"><strong>Yousaf Mahfooz Bajwa</strong></p>
+                            <p class="blockquote-footer">General Manager</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -455,7 +492,7 @@
         </div>
     </div> -->
 
-    <div id="contact">
+    <!-- <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -512,22 +549,59 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <div id="contact" style="color: #1c2331;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center contact-container">
+                    <div class="contact-directions-icon-container">
+                        <i class="fa-solid fa-location-dot contact-directions-icon"></i>
+                    </div>
+                    <div class="h3">
+                        <span><strong>Our Office</strong></span>
+                    </div>
+                    <div class="text-muted">
+                        <span>451, Karim Block Allama Iqbal Town, Lahore</span>
+                    </div>
+                    <div class="container contact-directions">
+                        <a target="_blank"
+                            href="https://maps.google.com/maps/dir//YAAS+ENERGY+PVT+LTD+Plot+451+Karim+Block+Allama+Iqbal+Town,+Lahore,+Punjab+54570/@31.507799,74.2773746,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3919030d1451678b:0x33372ed7095590e4">
+                            <button class="my-btn5 btn"><span>Get Directions <i
+                                        class="fa-solid fa-location-arrow"></i></span></button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="container">
+                        <iframe class="maps"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.1498892300247!2d74.2773746!3d31.507799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919030d1451678b%3A0x33372ed7095590e4!2sYAAS%20ENERGY%20PVT%20LTD!5e1!3m2!1sen!2s!4v1693057394531!5m2!1sen!2s"
+                            width="100%" height="450" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="text-center text-white">
-        <div class="row" id="footer">
+        <div class="row" id="footer" style="background-color: #1c2331;">
             <div class="container">
                 <div class="social-icons spinned">
-                    <a class="item facebook" href="#" target="_blank"><em class="fa fa-facebook"></em></a>
-                    <a class="item linkedin" href="#" target="_blank"><em class="fa fa-linkedin"></em></a>
-                    <a class="item instagram" href="#" target="_blank"><em class="fa fa-instagram"></em></a>
-                    <a class="item phone" href="tel:+923066882888" target="_blank"><em
-                            class="fa-solid fa-phone"></em></a>
+                    <a style="background-color: #fff; color: #125487;" class="item facebook" href="#"
+                        target="_blank"><em class="fa fa-facebook"></em></a>
+                    <a style="background-color: #fff; color: #125487;" class="item linkedin" href="#"
+                        target="_blank"><em class="fa fa-linkedin"></em></a>
+                    <a style="background-color: #fff; color: #125487;" class="item instagram" href="#"
+                        target="_blank"><em class="fa fa-instagram"></em></a>
+                    <a style="background-color: #fff; color: #125487;" class="item phone" href="tel:+923066882888"
+                        target="_blank"><em class="fa-solid fa-phone"></em></a>
                 </div>
             </div>
         </div>
         <div class="text-center p-2" id="copyright">
-            <span>&copy; <em id="date"></em>YAAS Energy. All rights reserved</span>
+            <span style="color: #125487">&copy; <em id="date"></em>YAAS Energy. All rights reserved</span>
         </div>
     </footer>
 </body>
