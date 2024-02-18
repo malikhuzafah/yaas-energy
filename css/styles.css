@@ -620,6 +620,14 @@ a {
   background-image: url("../images/main-1.jpg");
 }
 
+.about-section {
+  padding-left: 50px;
+}
+
+.about-section-vision {
+  padding-right: 50px;
+}
+
 /* #team-abdullah {
   background-image: url("../images/team-abdullah.jpeg");
   background-position: center;
@@ -1338,6 +1346,14 @@ a {
     margin-top: 100px;
     margin-bottom: -100px;
   }
+  .about-section {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  .about-section-vision {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -1439,6 +1455,14 @@ a {
   .team-banner-info {
     margin-top: 100px;
     margin-bottom: -100px;
+  }
+  .about-section {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  .about-section-vision {
+    padding-right: 0;
+    margin-bottom: 30px;
   }
 }
 
