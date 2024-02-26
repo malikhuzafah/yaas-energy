@@ -260,12 +260,18 @@ $(function () {
       $("#name-err").html("");
       c++;
     }
-    if ($("#phone-input").val().length === 0) {
-      $("#phone-err").html("Phone number is required!");
+    if ($("#email-input").val().length === 0) {
+      $("#email-err").html("Email is required!");
     } else {
-      $("#phone-err").html("");
+      $("#email-err").html("");
       c++;
     }
+    // if ($("#phone-input").val().length === 0) {
+    //   $("#phone-err").html("Phone number is required!");
+    // } else {
+    //   $("#phone-err").html("");
+    //   c++;
+    // }
     if ($("#msg-input").val().length === 0) {
       $("#msg-err").html("Please enter some Message!");
     } else {
@@ -276,7 +282,7 @@ $(function () {
       var email = $("#email-input").val();
       var name = $("#name-input").val();
       var phone = $("#phone-input").val();
-      var city = $("#email-input").val();
+      var city = $("#city-input").val();
       var type = $("#type-input").val();
       var bill = $("#bill-input").val();
       var message = $("#msg-input").val();
